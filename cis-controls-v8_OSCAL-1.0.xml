@@ -2,7 +2,7 @@
 <!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2022-01-19T16:00:34.033789-05:00 -->
 <catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns="http://csrc.nist.gov/ns/oscal/1.0"
- xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/v1.0.0/xml/schema/oscal_catalog_schema.xsd"
+ xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/v1.0.4/xml/schema/oscal_catalog_schema.xsd"
  uuid="e95fb23c-57d2-495f-8ab5-2c6b3152bcee">
  <metadata>
  <title>CIS Controls</title>
