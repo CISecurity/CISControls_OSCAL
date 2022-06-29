@@ -12,6 +12,6 @@ OSCAL is develped by NIST as a standardized, data-centric framework that can be 
 Please note: this documentation is a work in progress. If you have questions or suggestions, please [create an issue](https://github.com/CISecurity/CISControls_OSCAL/issues) with a full description of your question or idea.
 
 # Getting Help
-If you need help understanding and following this process, please email your questions to [Controls Info](controlsinfo@cisecurity.org).
-If you encounter issues or have ideas for improving this process, please [create an issue]((https://github.com/CISecurity/CISControls_OSCAL/issues) with a full description of your issue or idea.
+If you need help understanding and following this process, please email your questions to [Controls Info](mailto:controlsinfo@cisecurity.org).
+If you encounter issues or have ideas for improving this process, please [create an issue](https://github.com/CISecurity/CISControls_OSCAL/issues) with a full description of your issue or idea.
 
