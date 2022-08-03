@@ -1,933 +1,787 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This is a mapping example used for development. This file should be moved to the oscal-content repo when this feature is ready. -->
 <mapping-collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../OSCAL/mapping.xsd"
- xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="3559d200-4849-41ac-a420-28b2ffa22c52">
-    <metadata>
-        <title>Example mapping between CIS controls and Cloud Controls Matrix v4.0.5</title>
-        <last-modified>2022-04-13T08:37:21.323321800-04:00</last-modified>
-        <version>0.0.1</version>
-        <oscal-version>1.0.3</oscal-version>
-    </metadata>
-    <mapping uuid="9eb2019c-f3be-4f96-947e-58876a46b2a9">
-    	<!-- update UID --> 
-    	<source-resource type="catalog" href="#5ca20d92-aa27-462f-be0d-51385e55149a"/>
-    	<!-- #update UID -->
-    	<target-resource type="catalog" href="#711085f6-c390-4b25-b5f1-30066a56073d"/>
-    	<map uuid="6a9a1161-770e-4556-9740-41e1809e14ea">
-            <relationship>equivalent-to</relationship>
-            <source type="control" id-ref="#cis-1.1"/>
-            <target type="control" id-ref="#UEM-04">
-                <!-- TODO: consider a way to reference parameters allowing the review period of at least bi-annually to be described -->
-                <!-- <using-param id="cm-08_odp.02">at least bi-annually</using-param>-->
-            </target>
-            <target type="control" id-ref="#cm-8.1"/>
-            <remarks>
-                <p>The combination of SP 800-53 CM-8 and CM-8(1) describe similar implementation requirements to CIS 1.1.</p>
-            </remarks>
-        </map>
+	xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../OSCAL/mapping.xsd"
+	xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="3559d200-4849-41ac-a420-28b2ffa22c52">
+	<metadata>
+		<title>Example mapping between CIS controls and Cloud Controls Matrix v4.0.5</title>
+		<last-modified>2022-04-13T08:37:21.323321800-04:00</last-modified>
+		<version>0.0.1</version>
+		<oscal-version>1.0.3</oscal-version>
+	</metadata>
+	<mapping uuid="9eb2019c-f3be-4f96-947e-58876a46b2a9">
+		<!-- update UID -->
+		<source-resource type="catalog" href="#5ca20d92-aa27-462f-be0d-51385e55149a"/>
+		<!-- #update UID -->
+		<target-resource type="catalog" href="#711085f6-c390-4b25-b5f1-30066a56073d"/>
+		<map uuid="6a9a1161-770e-4556-9740-41e1809e14ea">
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-1.1"/>
+			<target type="control" id-ref="#UEM-04">
+				<!-- TODO: consider a way to reference parameters allowing the review period of at least bi-annually to be described -->
+				<!-- <using-param id="cm-08_odp.02">at least bi-annually</using-param>-->
+			</target>
+			<target type="control" id-ref="#cm-8.1"/>
+			<remarks>
+				<p>The combination of SP 800-53 CM-8 and CM-8(1) describe similar implementation
+					requirements to CIS 1.1.</p>
+			</remarks>
+		</map>
 		<map uuid="383ee0c0-8739-4e61-b33e-f6f92b0bc7ed">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-1.1"/>
-		<target type="control" id-ref="#UEM-04">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-1.1"/>
+			<target type="control" id-ref="#UEM-04"> </target>
 		</map>
 		<map uuid="23e6fbec-3e36-42d1-aff5-98f28145ae32">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-1.3"/>
-		<target type="control" id-ref="#UEM-05">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-1.3"/>
+			<target type="control" id-ref="#UEM-05"> </target>
 		</map>
 		<map uuid="2162f11d-f51d-4164-80fc-2c80241d8c35">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-2.1"/>
-		<target type="control" id-ref="#UEM-02">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-2.1"/>
+			<target type="control" id-ref="#UEM-02"> </target>
 		</map>
 		<map uuid="a350cef1-140f-4576-92a9-7a79db43bf2b">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-3.1"/>
-		<target type="control" id-ref="#DSP-01">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-3.1"/>
+			<target type="control" id-ref="#DSP-01"> </target>
 		</map>
 		<map uuid="14f99cad-40b8-4087-b690-9a820289f148">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-3.1"/>
-		<target type="control" id-ref="#DSP-06">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.1"/>
+			<target type="control" id-ref="#DSP-06"> </target>
 		</map>
 		<map uuid="78f99280-2336-4d24-a864-5df5663ac715">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-3.1"/>
-		<target type="control" id-ref="#GRC-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.1"/>
+			<target type="control" id-ref="#GRC-03"> </target>
 		</map>
 		<map uuid="f8592824-6d34-41dd-8b3a-0b3cc9a52954">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-3.2"/>
-		<target type="control" id-ref="#DSP-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.2"/>
+			<target type="control" id-ref="#DSP-03"> </target>
 		</map>
 		<map uuid="12955adb-d3ab-4a05-b5f1-086a1ba543bb">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.3"/>
-		<target type="control" id-ref="#DSP-17">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.3"/>
+			<target type="control" id-ref="#DSP-17"> </target>
 		</map>
 		<map uuid="2ed2eaf9-f53c-45ee-aa9d-930454686307">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-3.3"/>
-		<target type="control" id-ref="#IAM-05">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-3.3"/>
+			<target type="control" id-ref="#IAM-05"> </target>
 		</map>
 		<map uuid="02f2174f-0acb-450e-8313-722fea41f381">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.4"/>
-		<target type="control" id-ref="#DSP-16">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.4"/>
+			<target type="control" id-ref="#DSP-16"> </target>
 		</map>
 		<map uuid="0f90beb8-8bfc-4380-ab52-f9d163ccaa1c">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-3.5"/>
-		<target type="control" id-ref="#DSP-02">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-3.5"/>
+			<target type="control" id-ref="#DSP-02"> </target>
 		</map>
 		<map uuid="c0be2e0b-aeff-4fd1-9dd6-fe57d1fdb2b1">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.5"/>
-		<target type="control" id-ref="#DSP-16">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.5"/>
+			<target type="control" id-ref="#DSP-16"> </target>
 		</map>
 		<map uuid="91dd6667-6784-4233-98c2-0c1810ead394">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.6"/>
-		<target type="control" id-ref="#CEK-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.6"/>
+			<target type="control" id-ref="#CEK-03"> </target>
 		</map>
 		<map uuid="222f3372-32b5-4970-82d8-e4a9bdd3075c">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-3.6"/>
-		<target type="control" id-ref="#UEM-08">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-3.6"/>
+			<target type="control" id-ref="#UEM-08"> </target>
 		</map>
 		<map uuid="824f98e6-913f-4f61-be23-f0cfcd6620b6">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.7"/>
-		<target type="control" id-ref="#DSP-01">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.7"/>
+			<target type="control" id-ref="#DSP-01"> </target>
 		</map>
 		<map uuid="2d57f872-16b0-4dd3-88db-e181fc79dae0">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-3.7"/>
-		<target type="control" id-ref="#DSP-04">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-3.7"/>
+			<target type="control" id-ref="#DSP-04"> </target>
 		</map>
 		<map uuid="b049ec72-f315-4abf-a043-a049927847d0">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-3.8"/>
-		<target type="control" id-ref="#DSP-05">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-3.8"/>
+			<target type="control" id-ref="#DSP-05"> </target>
 		</map>
 		<map uuid="ec7db17a-fbbd-41b0-b106-5014f2d2ebf4">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.8"/>
-		<target type="control" id-ref="#IVS-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.8"/>
+			<target type="control" id-ref="#IVS-03"> </target>
 		</map>
 		<map uuid="95ede245-123a-4f42-8c00-97793f90d731">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.10"/>
-		<target type="control" id-ref="#CEK-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#CEK-03"> </target>
 		</map>
 		<map uuid="95b082bc-4301-481d-82fa-2787c169e831">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.10"/>
-		<target type="control" id-ref="#DSP-10">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#DSP-10"> </target>
 		</map>
 		<map uuid="9ed3888d-1816-4876-acc8-cfa29571dedb">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.10"/>
-		<target type="control" id-ref="#DSP-10">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#DSP-10"> </target>
 		</map>
 		<map uuid="a9e5e849-f3fa-4778-80b0-b564e78167bb">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.10"/>
-		<target type="control" id-ref="#IVS-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#IVS-03"> </target>
 		</map>
 		<map uuid="e2a6e1e3-2e1d-4bbd-9c86-461f0bb495e9">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.11"/>
-		<target type="control" id-ref="#CEK-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.11"/>
+			<target type="control" id-ref="#CEK-03"> </target>
 		</map>
 		<map uuid="88fa58c5-f271-4ad7-8475-54f3469f1312">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.12"/>
-		<target type="control" id-ref="#DSP-17">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.12"/>
+			<target type="control" id-ref="#DSP-17"> </target>
 		</map>
 		<map uuid="042cf8c5-0605-4959-89bc-6d2cf73730aa">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-3.13"/>
-		<target type="control" id-ref="#DSP-10">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.13"/>
+			<target type="control" id-ref="#DSP-10"> </target>
 		</map>
 		<map uuid="a0205cf3-f7ab-494d-ba6b-cfdcd123f348">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-3.13"/>
-		<target type="control" id-ref="#UEM-11">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-3.13"/>
+			<target type="control" id-ref="#UEM-11"> </target>
 		</map>
 		<map uuid="46d9b21a-c28f-49f9-ad63-ac82cf6f9070">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.14"/>
-		<target type="control" id-ref="#DSP-17">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.14"/>
+			<target type="control" id-ref="#DSP-17"> </target>
 		</map>
 		<map uuid="8c5c5704-d97f-42d0-8791-0d976e45454f">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-3.14"/>
-		<target type="control" id-ref="#IAM-12">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.14"/>
+			<target type="control" id-ref="#IAM-12"> </target>
 		</map>
 		<map uuid="cc18b09d-137f-4681-91af-4dd5901eda2a">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-3.14"/>
-		<target type="control" id-ref="#LOG-04">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.14"/>
+			<target type="control" id-ref="#LOG-04"> </target>
 		</map>
 		<map uuid="ca35c1e0-4afd-48a0-b908-176dab5fcf83">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-4.1"/>
-		<target type="control" id-ref="#CCC-01">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#CCC-01"> </target>
 		</map>
 		<map uuid="b3611321-9627-43f3-8fe9-5b521105beb2">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-4.1"/>
-		<target type="control" id-ref="#CCC-01">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#CCC-01"> </target>
 		</map>
 		<map uuid="529b0131-1b9c-480e-9910-e4ea925a0052">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-4.1"/>
-		<target type="control" id-ref="#GRC-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#GRC-03"> </target>
 		</map>
 		<map uuid="259e07b8-e640-424e-a2be-83c4abd652b7">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-4.1"/>
-		<target type="control" id-ref="#IVS-04">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#IVS-04"> </target>
 		</map>
 		<map uuid="2ac91f70-c2c9-42ad-b969-0d8031835610">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-4.2"/>
-		<target type="control" id-ref="#IVS-04">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#IVS-04"> </target>
 		</map>
 		<map uuid="8328a6ed-4dfd-4577-875c-6d2baf9d1970">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-4.3"/>
-		<target type="control" id-ref="#UEM-06">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-4.3"/>
+			<target type="control" id-ref="#UEM-06"> </target>
 		</map>
 		<map uuid="f23c64ca-30ef-4801-b3a4-e66077d7e1a0">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-4.5"/>
-		<target type="control" id-ref="#UEM-10">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-4.5"/>
+			<target type="control" id-ref="#UEM-10"> </target>
 		</map>
 		<map uuid="9ac4010d-b0ac-453d-8170-1a29f4f78e6d">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-4.11"/>
-		<target type="control" id-ref="#UEM-13">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-4.11"/>
+			<target type="control" id-ref="#UEM-13"> </target>
 		</map>
 		<map uuid="b4b9df39-e015-453f-a877-5052675adf60">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-4.12"/>
-		<target type="control" id-ref="#HRS-04">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.12"/>
+			<target type="control" id-ref="#HRS-04"> </target>
 		</map>
 		<map uuid="a2af0058-8daa-4e5c-9a02-90297dcd284c">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-5.1"/>
-		<target type="control" id-ref="#IAM-03">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-5.1"/>
+			<target type="control" id-ref="#IAM-03"> </target>
 		</map>
 		<map uuid="df8c35c6-f421-4b05-ae33-c63ac392a756">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-5.1"/>
-		<target type="control" id-ref="#IAM-08">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-5.1"/>
+			<target type="control" id-ref="#IAM-08"> </target>
 		</map>
 		<map uuid="e690fa8d-a7c2-4475-86a5-89a5fc0a2d37">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-5.1"/>
-		<target type="control" id-ref="#IAM-10">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-5.1"/>
+			<target type="control" id-ref="#IAM-10"> </target>
 		</map>
 		<map uuid="25f18273-feb1-40d7-9921-7427eb596306">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-5.1"/>
-		<target type="control" id-ref="#IAM-16">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-5.1"/>
+			<target type="control" id-ref="#IAM-16"> </target>
 		</map>
 		<map uuid="ddc4998c-89fd-4164-8726-55a944ff3863">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-5.2"/>
-		<target type="control" id-ref="#IAM-02">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-5.2"/>
+			<target type="control" id-ref="#IAM-02"> </target>
 		</map>
 		<map uuid="0925eb00-e45a-42c7-87eb-fee3aa36a234">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-5.4"/>
-		<target type="control" id-ref="#IAM-09">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-5.4"/>
+			<target type="control" id-ref="#IAM-09"> </target>
 		</map>
 		<map uuid="abbf00fc-a5ac-43dd-91c7-d305edc52258">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-5.5"/>
-		<target type="control" id-ref="#IAM-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-5.5"/>
+			<target type="control" id-ref="#IAM-03"> </target>
 		</map>
 		<map uuid="41f53f60-f768-42ff-8d15-a7ea92e20450">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.1"/>
-		<target type="control" id-ref="#IAM-01">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.1"/>
+			<target type="control" id-ref="#IAM-01"> </target>
 		</map>
 		<map uuid="c0fa155e-9c82-4150-a601-ccf68afa1328">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.1"/>
-		<target type="control" id-ref="#IAM-06">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.1"/>
+			<target type="control" id-ref="#IAM-06"> </target>
 		</map>
 		<map uuid="0127c0ad-c57c-4fa7-aa40-322ece347c8f">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.1"/>
-		<target type="control" id-ref="#IAM-07">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.1"/>
+			<target type="control" id-ref="#IAM-07"> </target>
 		</map>
 		<map uuid="27b7b4cd-4215-4caa-8fd1-69cfed7bf265">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.2"/>
-		<target type="control" id-ref="#HRS-06">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.2"/>
+			<target type="control" id-ref="#HRS-06"> </target>
 		</map>
 		<map uuid="96954b3a-2f03-4ce8-adcf-6b7d92610140">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.2"/>
-		<target type="control" id-ref="#IAM-01">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.2"/>
+			<target type="control" id-ref="#IAM-01"> </target>
 		</map>
 		<map uuid="137a4718-3975-4ce2-bab6-7bd0dd8d7b7a">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-6.2"/>
-		<target type="control" id-ref="#IAM-07">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-6.2"/>
+			<target type="control" id-ref="#IAM-07"> </target>
 		</map>
 		<map uuid="31bd8a68-1791-4d9f-99ab-e11de563489e">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.4"/>
-		<target type="control" id-ref="#HRS-04">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.4"/>
+			<target type="control" id-ref="#HRS-04"> </target>
 		</map>
 		<map uuid="b5b5068b-2bb9-48f3-805c-c61c54bcbf3f">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.5"/>
-		<target type="control" id-ref="#IAM-10">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.5"/>
+			<target type="control" id-ref="#IAM-10"> </target>
 		</map>
 		<map uuid="365c9f4f-d112-4a6e-8d18-a62189d5651b">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.5"/>
-		<target type="control" id-ref="#IAM-14">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.5"/>
+			<target type="control" id-ref="#IAM-14"> </target>
 		</map>
 		<map uuid="a38dee63-c5c0-4d57-9756-f0d3ddd3f6d6">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-6.6"/>
-		<target type="control" id-ref="#IAM-01">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.6"/>
+			<target type="control" id-ref="#IAM-01"> </target>
 		</map>
 		<map uuid="c0baccf0-a438-4d9e-9e81-d4501971d582">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-6.8"/>
-		<target type="control" id-ref="#IAM-04">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#IAM-04"> </target>
 		</map>
 		<map uuid="4b90b83e-ca8f-4d94-957c-6c0212e763e6">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-6.8"/>
-		<target type="control" id-ref="#IAM-05">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#IAM-05"> </target>
 		</map>
 		<map uuid="4f324b27-3b58-49a4-a25d-779685b1023d">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-6.8"/>
-		<target type="control" id-ref="#IAM-16">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#IAM-16"> </target>
 		</map>
 		<map uuid="3f109fc9-68f5-4f70-9290-42ed674d59ce">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-7.1"/>
-		<target type="control" id-ref="#TVM-01">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-7.1"/>
+			<target type="control" id-ref="#TVM-01"> </target>
 		</map>
 		<map uuid="6f13ff2a-7e64-492e-99ee-aabbe79b37e1">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-7.1"/>
-		<target type="control" id-ref="#TVM-07">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-7.1"/>
+			<target type="control" id-ref="#TVM-07"> </target>
 		</map>
 		<map uuid="af47907d-4def-4a92-adf8-b97f588d37b9">
-		<relationship>supserset</relationship>
-		<source type="control" id-ref="#cis-7.1"/>
-		<target type="control" id-ref="#TVM-09">
-		</target>
+			<relationship>supserset</relationship>
+			<source type="control" id-ref="#cis-7.1"/>
+			<target type="control" id-ref="#TVM-09"> </target>
 		</map>
 		<map uuid="5352bb00-3207-455e-9972-7c0ed30db637">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-7.2"/>
-		<target type="control" id-ref="#A&amp;Amp;A-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.2"/>
+			<target type="control" id-ref="#A&amp;Amp;A-03"> </target>
 		</map>
 		<map uuid="44725d67-6f5a-4ab4-8ea2-eca43418f077">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-7.2"/>
-		<target type="control" id-ref="#TVM-08">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-7.2"/>
+			<target type="control" id-ref="#TVM-08"> </target>
 		</map>
 		<map uuid="d4add505-1cd1-441c-b28b-f6afcdc96d3c">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-7.2"/>
-		<target type="control" id-ref="#TVM-10">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-7.2"/>
+			<target type="control" id-ref="#TVM-10"> </target>
 		</map>
 		<map uuid="06c281c0-eb00-44a3-8b62-ad36c2644e27">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-7.3"/>
-		<target type="control" id-ref="#UEM-07">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-7.3"/>
+			<target type="control" id-ref="#UEM-07"> </target>
 		</map>
 		<map uuid="dbf050b6-cb7f-4d8b-8989-d4dbcd4efe34">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-7.4"/>
-		<target type="control" id-ref="#UEM-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-7.4"/>
+			<target type="control" id-ref="#UEM-03"> </target>
 		</map>
 		<map uuid="c178e1f7-5581-437d-8505-082495c16f74">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-7.5"/>
-		<target type="control" id-ref="#TVM-07">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.5"/>
+			<target type="control" id-ref="#TVM-07"> </target>
 		</map>
 		<map uuid="295ef882-ba37-4889-9a49-f43e7141d115">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-7.6"/>
-		<target type="control" id-ref="#TVM-07">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.6"/>
+			<target type="control" id-ref="#TVM-07"> </target>
 		</map>
 		<map uuid="1c8344e7-3819-4d3f-a587-aea14c1db0e1">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-7.7"/>
-		<target type="control" id-ref="#TVM-03">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-7.7"/>
+			<target type="control" id-ref="#TVM-03"> </target>
 		</map>
 		<map uuid="de1c4e0f-f6a0-4302-b161-1e5bdfd34e04">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-8.1"/>
-		<target type="control" id-ref="#A&amp;A-01">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.1"/>
+			<target type="control" id-ref="#A&amp;A-01"> </target>
 		</map>
 		<map uuid="56b70c69-e466-4b79-9ad9-971d401f1bc3">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-8.1"/>
-		<target type="control" id-ref="#LOG-01">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-8.1"/>
+			<target type="control" id-ref="#LOG-01"> </target>
 		</map>
 		<map uuid="d9b2134c-f84e-459a-9f97-71d224f13462">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-8.1"/>
-		<target type="control" id-ref="#LOG-07">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-8.1"/>
+			<target type="control" id-ref="#LOG-07"> </target>
 		</map>
 		<map uuid="84db0645-9b8d-4efe-893d-ffe2cb3867c8">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-8.2"/>
-		<target type="control" id-ref="#LOG-08">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-8.2"/>
+			<target type="control" id-ref="#LOG-08"> </target>
 		</map>
 		<map uuid="e91647e9-de63-419e-8b69-8021d073c49c">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-8.4"/>
-		<target type="control" id-ref="#LOG-06">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-8.4"/>
+			<target type="control" id-ref="#LOG-06"> </target>
 		</map>
 		<map uuid="24672f5a-38f5-49b2-9427-d6205a703a95">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-8.5"/>
-		<target type="control" id-ref="#DSP-17">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.5"/>
+			<target type="control" id-ref="#DSP-17"> </target>
 		</map>
 		<map uuid="cb7bdf51-7d8d-4575-9080-3d74266a4956">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-8.5"/>
-		<target type="control" id-ref="#LOG-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.5"/>
+			<target type="control" id-ref="#LOG-03"> </target>
 		</map>
 		<map uuid="cd0d9304-d263-4b15-a940-e29ce11a5952">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-8.10"/>
-		<target type="control" id-ref="#LOG-02">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.10"/>
+			<target type="control" id-ref="#LOG-02"> </target>
 		</map>
 		<map uuid="cb23c6be-2b68-422f-b96a-4649ac767cb7">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-8.11"/>
-		<target type="control" id-ref="#LOG-05">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-8.11"/>
+			<target type="control" id-ref="#LOG-05"> </target>
 		</map>
 		<map uuid="637f084d-07f0-4f1c-aefb-352dc60127ad">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-8.11"/>
-		<target type="control" id-ref="#LOG-13">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-8.11"/>
+			<target type="control" id-ref="#LOG-13"> </target>
 		</map>
 		<map uuid="ce24c911-24de-4db6-b513-c5b56e43e9e8">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-9.7"/>
-		<target type="control" id-ref="#TVM-02">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.7"/>
+			<target type="control" id-ref="#TVM-02"> </target>
 		</map>
 		<map uuid="071a7f32-b337-4907-8971-057b6d51dd85">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-10.1"/>
-		<target type="control" id-ref="#TVM-02">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.1"/>
+			<target type="control" id-ref="#TVM-02"> </target>
 		</map>
 		<map uuid="e7507be2-11d7-4e3c-8c7b-506026eb38ef">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-10.1"/>
-		<target type="control" id-ref="#UEM-09">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-10.1"/>
+			<target type="control" id-ref="#UEM-09"> </target>
 		</map>
 		<map uuid="429dec9a-09e9-48d7-a1b9-6e28f88b8a76">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-10.2"/>
-		<target type="control" id-ref="#TVM-04">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.2"/>
+			<target type="control" id-ref="#TVM-04"> </target>
 		</map>
 		<map uuid="08f4e56c-fe2d-447f-aa5b-287b1554079d">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-12.2"/>
-		<target type="control" id-ref="#DSP-07">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#DSP-07"> </target>
 		</map>
 		<map uuid="58d38197-854b-4906-99f9-6a6dace91752">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-12.2"/>
-		<target type="control" id-ref="#IVS-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#IVS-03"> </target>
 		</map>
 		<map uuid="957b9cd4-47c5-4f0b-b92e-7e8d1cf7c253">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-12.4"/>
-		<target type="control" id-ref="#IVS-08">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-12.4"/>
+			<target type="control" id-ref="#IVS-08"> </target>
 		</map>
 		<map uuid="b2f139c5-382e-4838-ad66-8e2605cbf2b9">
-		<relationship>intersects</relationship>
-		<source type="control" id-ref="#cis-12.5"/>
-		<target type="control" id-ref="#IAM-14">
-		</target>
+			<relationship>intersects</relationship>
+			<source type="control" id-ref="#cis-12.5"/>
+			<target type="control" id-ref="#IAM-14"> </target>
 		</map>
 		<map uuid="5a5149e7-f522-4871-88a5-5134aeb64d6f">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-12.7"/>
-		<target type="control" id-ref="#HRS-04">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.7"/>
+			<target type="control" id-ref="#HRS-04"> </target>
 		</map>
 		<map uuid="5bddbe2f-cd2e-4133-a3c9-b6602876a14a">
-		<relationship>intersects</relationship>
-		<source type="control" id-ref="#cis-12.7"/>
-		<target type="control" id-ref="#IAM-14">
-		</target>
+			<relationship>intersects</relationship>
+			<source type="control" id-ref="#cis-12.7"/>
+			<target type="control" id-ref="#IAM-14"> </target>
 		</map>
 		<map uuid="e4dc90c5-f6e8-4262-9f81-e91f77f85628">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-13.1"/>
-		<target type="control" id-ref="#LOG-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-13.1"/>
+			<target type="control" id-ref="#LOG-03"> </target>
 		</map>
 		<map uuid="8a792030-f33b-4ae6-86a4-5887a8da25ea">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-13.1"/>
-		<target type="control" id-ref="#SEF-01">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.1"/>
+			<target type="control" id-ref="#SEF-01"> </target>
 		</map>
 		<map uuid="8898cb4d-bd5a-4579-976f-469801b77e44">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-13.3"/>
-		<target type="control" id-ref="#IVS-09">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.3"/>
+			<target type="control" id-ref="#IVS-09"> </target>
 		</map>
 		<map uuid="9e50aa9e-ef48-4125-94b7-f8a5af255e5c">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-13.5"/>
-		<target type="control" id-ref="#HRS-04">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.5"/>
+			<target type="control" id-ref="#HRS-04"> </target>
 		</map>
 		<map uuid="e46c826a-47ca-409d-aeea-67c857d48282">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-13.6"/>
-		<target type="control" id-ref="#IVS-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.6"/>
+			<target type="control" id-ref="#IVS-03"> </target>
 		</map>
 		<map uuid="7c7708cb-6fd7-4e04-a897-5095745768f7">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-13.8"/>
-		<target type="control" id-ref="#IVS-09">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.8"/>
+			<target type="control" id-ref="#IVS-09"> </target>
 		</map>
 		<map uuid="0d77eccd-3df7-4c41-9299-25b58a73491c">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-13.9"/>
-		<target type="control" id-ref="#IVS-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.9"/>
+			<target type="control" id-ref="#IVS-03"> </target>
 		</map>
 		<map uuid="b6bfa101-06bf-4169-8711-114d67f93cbf">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-14.1"/>
-		<target type="control" id-ref="#GRC-05">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-14.1"/>
+			<target type="control" id-ref="#GRC-05"> </target>
 		</map>
 		<map uuid="8bbac20f-5444-4664-ade0-2150798f1327">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-14.1"/>
-		<target type="control" id-ref="#HRS-11">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-14.1"/>
+			<target type="control" id-ref="#HRS-11"> </target>
 		</map>
 		<map uuid="4e546bea-9675-4c6a-8ce0-94d11fb0a4bb">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-14.1"/>
-		<target type="control" id-ref="#GRC-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-14.1"/>
+			<target type="control" id-ref="#GRC-03"> </target>
 		</map>
 		<map uuid="531ace4b-35c3-4d8c-b805-c224ada6a83d">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.2"/>
-		<target type="control" id-ref="#HRS-11">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.2"/>
+			<target type="control" id-ref="#HRS-11"> </target>
 		</map>
 		<map uuid="a0074c66-480c-4cb7-badc-0c9fd5f785a2">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.3"/>
-		<target type="control" id-ref="#GRC-05">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.3"/>
+			<target type="control" id-ref="#GRC-05"> </target>
 		</map>
 		<map uuid="29652793-13aa-4b30-a9d9-585279a0c115">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.3"/>
-		<target type="control" id-ref="#HRS-11">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.3"/>
+			<target type="control" id-ref="#HRS-11"> </target>
 		</map>
 		<map uuid="e8a8e264-1044-4e76-97c8-42688bccba09">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.4"/>
-		<target type="control" id-ref="#DSP-17">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.4"/>
+			<target type="control" id-ref="#DSP-17"> </target>
 		</map>
 		<map uuid="57b39cd8-2494-4336-88af-ca19b8f1d5e8">
-		<relationship>intersects</relationship>
-		<source type="control" id-ref="#cis-14.4"/>
-		<target type="control" id-ref="#GRC-01">
-		</target>
+			<relationship>intersects</relationship>
+			<source type="control" id-ref="#cis-14.4"/>
+			<target type="control" id-ref="#GRC-01"> </target>
 		</map>
 		<map uuid="90f58a67-9e97-4c54-add0-21ece8adc949">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-14.4"/>
-		<target type="control" id-ref="#HRS-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-14.4"/>
+			<target type="control" id-ref="#HRS-03"> </target>
 		</map>
 		<map uuid="7ac6b858-3106-495d-8bf4-23902dcfcf71">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-14.4"/>
-		<target type="control" id-ref="#HRS-12">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-14.4"/>
+			<target type="control" id-ref="#HRS-12"> </target>
 		</map>
 		<map uuid="42cc1ba2-362d-43cc-b441-7bbad551a673">
-		<relationship>intersects</relationship>
-		<source type="control" id-ref="#cis-14.5"/>
-		<target type="control" id-ref="#GRC-01">
-		</target>
+			<relationship>intersects</relationship>
+			<source type="control" id-ref="#cis-14.5"/>
+			<target type="control" id-ref="#GRC-01"> </target>
 		</map>
 		<map uuid="a6f9056c-ce90-4145-bd86-143ea34e3671">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.5"/>
-		<target type="control" id-ref="#HRS-11">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.5"/>
+			<target type="control" id-ref="#HRS-11"> </target>
 		</map>
 		<map uuid="c0c778df-a55d-48b1-b1a0-5ec7b4dfb90f">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.6"/>
-		<target type="control" id-ref="#HRS-11">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.6"/>
+			<target type="control" id-ref="#HRS-11"> </target>
 		</map>
 		<map uuid="ff0525a2-b9c5-4a2e-a2ac-bacd99a8aa67">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.7"/>
-		<target type="control" id-ref="#DSP-17">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.7"/>
+			<target type="control" id-ref="#DSP-17"> </target>
 		</map>
 		<map uuid="7cdb93c4-e295-476c-8850-b46941b6ea74">
-		<relationship>intersects</relationship>
-		<source type="control" id-ref="#cis-14.8"/>
-		<target type="control" id-ref="#GRC-01">
-		</target>
+			<relationship>intersects</relationship>
+			<source type="control" id-ref="#cis-14.8"/>
+			<target type="control" id-ref="#GRC-01"> </target>
 		</map>
 		<map uuid="1a7b7c1e-b876-41a9-8479-1bf50ceae9f9">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.8"/>
-		<target type="control" id-ref="#HRS-04">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.8"/>
+			<target type="control" id-ref="#HRS-04"> </target>
 		</map>
 		<map uuid="fa93b58d-400e-43d3-bf26-ff57d5a75de2">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-14.9"/>
-		<target type="control" id-ref="#HRS-09">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-14.9"/>
+			<target type="control" id-ref="#HRS-09"> </target>
 		</map>
 		<map uuid="832316fd-c936-4149-b52a-29cd12e180c5">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-14.9"/>
-		<target type="control" id-ref="#HRS-12">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.9"/>
+			<target type="control" id-ref="#HRS-12"> </target>
 		</map>
 		<map uuid="f0aa30e3-c629-4bed-b1d0-379a45217d7b">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-15.1"/>
-		<target type="control" id-ref="#STA-07">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-15.1"/>
+			<target type="control" id-ref="#STA-07"> </target>
 		</map>
 		<map uuid="24c77842-ad8b-484b-9eba-64be619a8b51">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-15.3"/>
-		<target type="control" id-ref="#GRC-02">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.3"/>
+			<target type="control" id-ref="#GRC-02"> </target>
 		</map>
 		<map uuid="d6a4b5b7-bda3-47dd-9eb9-f3b8cc2b3050">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-15.3"/>
-		<target type="control" id-ref="#STA-08">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.3"/>
+			<target type="control" id-ref="#STA-08"> </target>
 		</map>
 		<map uuid="0d2ce502-9913-492c-9dbc-0b84e2a86694">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-15.4"/>
-		<target type="control" id-ref="#STA-09">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.4"/>
+			<target type="control" id-ref="#STA-09"> </target>
 		</map>
 		<map uuid="a31ec15b-5b56-4c01-a658-6626655ebb69">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-15.4"/>
-		<target type="control" id-ref="#STA-10">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-15.4"/>
+			<target type="control" id-ref="#STA-10"> </target>
 		</map>
 		<map uuid="0998c607-88bf-4d55-bbe8-9707b6e0d0ae">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-15.4"/>
-		<target type="control" id-ref="#UEM-14">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-15.4"/>
+			<target type="control" id-ref="#UEM-14"> </target>
 		</map>
 		<map uuid="40d9de65-15b4-42dc-8db6-3360e76dee22">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-15.5"/>
-		<target type="control" id-ref="#STA-12">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-15.5"/>
+			<target type="control" id-ref="#STA-12"> </target>
 		</map>
 		<map uuid="9152d107-c4cb-4cf4-87f3-d1a15decc73a">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-15.5"/>
-		<target type="control" id-ref="#STA-13">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-15.5"/>
+			<target type="control" id-ref="#STA-13"> </target>
 		</map>
 		<map uuid="d36fe370-5d14-4983-8123-109eeac3b29d">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-15.6"/>
-		<target type="control" id-ref="#STA-14">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-15.6"/>
+			<target type="control" id-ref="#STA-14"> </target>
 		</map>
 		<map uuid="b64583a0-da87-4636-a8b8-6d2b7d7ac319">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-16.1"/>
-		<target type="control" id-ref="#AIS-01">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-16.1"/>
+			<target type="control" id-ref="#AIS-01"> </target>
 		</map>
 		<map uuid="f45bd4a4-1740-402c-bfdb-ec84f88df42f">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-16.1"/>
-		<target type="control" id-ref="#AIS-04">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-16.1"/>
+			<target type="control" id-ref="#AIS-04"> </target>
 		</map>
 		<map uuid="b0f3dc8f-2a62-4f2f-97f7-f58d64fe23ea">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-16.2"/>
-		<target type="control" id-ref="#AIS-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-16.2"/>
+			<target type="control" id-ref="#AIS-03"> </target>
 		</map>
 		<map uuid="067f2fc0-1df3-4cb4-9bc4-2387f720aef4">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-16.2"/>
-		<target type="control" id-ref="#AIS-07">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-16.2"/>
+			<target type="control" id-ref="#AIS-07"> </target>
 		</map>
 		<map uuid="ef8add2b-e0f2-4ba4-85fa-0f8c9d1c1c29">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-16.4"/>
-		<target type="control" id-ref="#GRC-02">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.4"/>
+			<target type="control" id-ref="#GRC-02"> </target>
 		</map>
 		<map uuid="fe022e31-b394-479a-9f03-a21261a0493d">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-16.6"/>
-		<target type="control" id-ref="#AIS-07">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-16.6"/>
+			<target type="control" id-ref="#AIS-07"> </target>
 		</map>
 		<map uuid="cb2e3386-c8f0-4d70-aaec-3052ebe358f1">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-16.6"/>
-		<target type="control" id-ref="#TVM-08">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.6"/>
+			<target type="control" id-ref="#TVM-08"> </target>
 		</map>
 		<map uuid="bda3184b-060b-4764-b9a1-0bb8e59fcca8">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-16.7"/>
-		<target type="control" id-ref="#AIS-02">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-16.7"/>
+			<target type="control" id-ref="#AIS-02"> </target>
 		</map>
 		<map uuid="c0cde3e1-aef6-4d77-a02a-8cc983d7e5ec">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-16.8"/>
-		<target type="control" id-ref="#IVS-05">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-16.8"/>
+			<target type="control" id-ref="#IVS-05"> </target>
 		</map>
 		<map uuid="71f1432c-18ad-4f85-a750-53d4e4a9dc12">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-16.10"/>
-		<target type="control" id-ref="#DSP-07">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.10"/>
+			<target type="control" id-ref="#DSP-07"> </target>
 		</map>
 		<map uuid="9bf8c233-d453-4013-9493-13b706c73da9">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-16.12"/>
-		<target type="control" id-ref="#AIS-05">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.12"/>
+			<target type="control" id-ref="#AIS-05"> </target>
 		</map>
 		<map uuid="bd9f9079-083e-47bc-b2ec-a8824737c489">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-16.13"/>
-		<target type="control" id-ref="#AIS-05">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-16.13"/>
+			<target type="control" id-ref="#AIS-05"> </target>
 		</map>
 		<map uuid="1c7e970c-3807-4a29-aa72-74e1b1b6358a">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-17.1"/>
-		<target type="control" id-ref="#BCR-01">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.1"/>
+			<target type="control" id-ref="#BCR-01"> </target>
 		</map>
 		<map uuid="71c0bf75-0466-458b-a842-68af5f3cdf1b">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-17.1"/>
-		<target type="control" id-ref="#SEF-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.1"/>
+			<target type="control" id-ref="#SEF-03"> </target>
 		</map>
 		<map uuid="0fe69621-ddcd-4f54-95f2-5a3a329eec9e">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-17.2"/>
-		<target type="control" id-ref="#SEF-08">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-17.2"/>
+			<target type="control" id-ref="#SEF-08"> </target>
 		</map>
 		<map uuid="5a13e251-3a33-4c27-a26a-9d0b9917f60e">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-17.2"/>
-		<target type="control" id-ref="#SEF-07">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.2"/>
+			<target type="control" id-ref="#SEF-07"> </target>
 		</map>
 		<map uuid="5600b5b0-a870-4ad9-a673-eef11c51deca">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-17.4"/>
-		<target type="control" id-ref="#SEF-01">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#SEF-01"> </target>
 		</map>
 		<map uuid="6807754f-2032-4ad5-8a85-b9d63c26402f">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-17.4"/>
-		<target type="control" id-ref="#SEF-02">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#SEF-02"> </target>
 		</map>
 		<map uuid="c89042bb-922d-42b9-be2c-17588e60be9a">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-17.4"/>
-		<target type="control" id-ref="#SEF-03">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#SEF-03"> </target>
 		</map>
 		<map uuid="4d084a7c-e27a-4e8d-a00b-f5afeb9f5d9e">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-17.4"/>
-		<target type="control" id-ref="#SEF-06">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#SEF-06"> </target>
 		</map>
 		<map uuid="1cb4a029-07ee-4817-ab32-289db9c7ba2e">
-		<relationship>superset-of</relationship>
-		<source type="control" id-ref="#cis-17.4"/>
-		<target type="control" id-ref="#GRC-03">
-		</target>
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#GRC-03"> </target>
 		</map>
 		<map uuid="0c54052b-fe01-44aa-aef5-a30fe489e838">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-17.5"/>
-		<target type="control" id-ref="#SEF-03">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.5"/>
+			<target type="control" id-ref="#SEF-03"> </target>
 		</map>
 		<map uuid="cb8d447b-c97a-45a3-8cd4-a61f4466a35d">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-17.7"/>
-		<target type="control" id-ref="#SEF-04">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-17.7"/>
+			<target type="control" id-ref="#SEF-04"> </target>
 		</map>
 		<map uuid="a1713855-8283-4f2d-87e8-cf77de583483">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-17.9"/>
-		<target type="control" id-ref="#SEF-05">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-17.9"/>
+			<target type="control" id-ref="#SEF-05"> </target>
 		</map>
 		<map uuid="838991d0-b2f2-4c9e-b370-01ff63c85061">
-		<relationship>equivalent-to</relationship>
-		<source type="control" id-ref="#cis-18.1"/>
-		<target type="control" id-ref="#TVM-06">
-		</target>
+			<relationship>equivalent-to</relationship>
+			<source type="control" id-ref="#cis-18.1"/>
+			<target type="control" id-ref="#TVM-06"> </target>
 		</map>
 		<map uuid="19299403-6122-4d97-b5f1-907137699c6b">
-		<relationship>subset-of</relationship>
-		<source type="control" id-ref="#cis-18.3"/>
-		<target type="control" id-ref="#TVM-08">
-		</target>
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-18.3"/>
+			<target type="control" id-ref="#TVM-08"> </target>
 		</map>
-    </mapping>
-    <back-matter>
-        <resource uuid="a84961de-55ae-4bf3-a2d3-86cc32b651af">
-        	<rlink href="cis-controls-v8_OSCAL-1.0.xml" media-type="application/oscal+xml"/>
-        </resource>
-        <resource uuid="711085f6-c390-4b25-b5f1-30066a56073d">
-        	<!-- TODO: this rlink needs to point to the CCM. -->
-            <rlink href="https://github.com/usnistgov/oscal-content/raw/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml" media-type="application/oscal+xml"/>
-        </resource>
-    </back-matter>
-</mapping-collection> 
+	</mapping>
+	<back-matter>
+		<resource uuid="a84961de-55ae-4bf3-a2d3-86cc32b651af">
+			<rlink href="cis-controls-v8_OSCAL-1.0.xml" media-type="application/oscal+xml"/>
+		</resource>
+		<resource uuid="711085f6-c390-4b25-b5f1-30066a56073d">
+			<!-- TODO: this rlink needs to point to the CCM. -->
+			<rlink
+				href="https://github.com/usnistgov/oscal-content/raw/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml"
+				media-type="application/oscal+xml"/>
+		</resource>
+	</back-matter>
+</mapping-collection>
