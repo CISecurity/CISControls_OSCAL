@@ -11,7 +11,7 @@
 	</metadata>
 	<mapping uuid="9eb2019c-f3be-4f96-947e-58876a46b2a9">
 		<!-- update UID -->
-		<source-resource type="catalog" href="#5ca20d92-aa27-462f-be0d-51385e55149a"/>
+		<source-resource type="catalog" href="#a84961de-55ae-4bf3-a2d3-86cc32b651af"/>
 		<!-- #update UID -->
 		<target-resource type="catalog" href="#711085f6-c390-4b25-b5f1-30066a56073d"/>
 		<map uuid="6a9a1161-770e-4556-9740-41e1809e14ea">
@@ -778,10 +778,8 @@
 			<rlink href="cis-controls-v8_OSCAL-1.0.xml" media-type="application/oscal+xml"/>
 		</resource>
 		<resource uuid="711085f6-c390-4b25-b5f1-30066a56073d">
-			<!-- TODO: this rlink needs to point to the CCM. -->
-			<rlink
-				href="https://github.com/usnistgov/oscal-content/raw/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml"
-				media-type="application/oscal+xml"/>
+			<!-- TODO: add an rlink to point to the CCM when an OSCAL version is made publiclly available. -->
+			<!-- TODO: It may be necessary to update the CCM identifiers to the ones used in the CCM OSCAL content. -->
 		</resource>
 	</back-matter>
 </mapping-collection>
