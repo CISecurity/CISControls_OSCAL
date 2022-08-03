@@ -778,8 +778,7 @@
 			<rlink href="cis-controls-v8_OSCAL-1.0.xml" media-type="application/oscal+xml"/>
 		</resource>
 		<resource uuid="711085f6-c390-4b25-b5f1-30066a56073d">
-			<!-- TODO: add an rlink to point to the CCM when an OSCAL version is made publiclly available. -->
-			<!-- TODO: It may be necessary to update the CCM identifiers to the ones used in the CCM OSCAL content. -->
+			<!-- TODO: add an rlink to point to the CCM when an OSCAL version is made publiclly available (https://github.com/CISecurity/CISControls_OSCAL/issues/4). -->
 		</resource>
 	</back-matter>
 </mapping-collection>
