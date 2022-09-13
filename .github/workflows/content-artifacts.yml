@@ -1,0 +1,90 @@
+on:
+  push:
+    branches:
+      - '*'
+    paths:
+      - 'src/**'
+      - 'oscal'
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    branches:
+      - '*'
+name: Process Content Artifacts
+env:
+  OSCAL_DIR_PATH: oscal
+  CICD_DIR_PATH: oscal/build/ci-cd
+  CONTENT_CONFIG_PATH: src/config
+  SAXON_VERSION: 10.8
+  HOME_REPO: ginger-anderson/CISControls_OSCAL
+jobs:
+  validate-and-publish-content:
+    name: Check, Convert and Validate Content
+    runs-on: ubuntu-20.04
+    steps:
+      # use this if checkout needs to be authenticated
+      - uses: actions/checkout@v2
+        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
+        with:
+          path: git-content
+          submodules: recursive
+          token: ${{ secrets.COMMIT_TOKEN }}
+      # use this if checkout is anonymous
+      - uses: actions/checkout@v2
+        if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
+        with:
+          path: git-content
+          submodules: recursive
+      # job-validate-content
+      - name: Update APT package metadata
+        run: |
+          sudo rm -rf /var/lib/apt/lists/* && sudo apt-get update
+      - name: Install APT dependencies
+        run: |
+          sudo apt-get install libxml2-utils
+      - name: Install NPM dependencies
+        run: |
+          sudo npm install --loglevel verbose -g yargs ajv-formats@"^1.5.x" ajv-cli@"^4.0.x" yaml-convert@"^1.0.x"
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+      - name: Get Saxon-HE
+        run: |
+          mvn org.apache.maven.plugins:maven-dependency-plugin:2.10:get -DartifactId=Saxon-HE -DgroupId=net.sf.saxon -Dversion=$SAXON_VERSION
+      - name: Set up Python 3.x
+        uses: actions/setup-python@98f2ad02fd48d057ee3b4d4f66525b231c3e52b6 # current release v3.1.2
+        with:
+          python-version: '3.8'
+          architecture: 'x64'
+          cache: 'pip'
+          cache-dependency-path: |
+            git-content/${{ env.CICD_DIR_PATH }}/python/requirements.txt
+      - name: Install Python dependencies
+        run: |
+          pip install -r "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/python/requirements.txt"
+      - name: Validate Content
+        run:
+          # mkdir -p "${OSCAL_BUILD_DIR_PATH}"
+          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/validate-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}"
+      # job-copy-and-convert-content
+      - name: Auto-convert Content
+        run:
+          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content" --resolve-profiles
+      - name: Publish Artifacts
+        # only do this on main
+        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
+        uses: stefanzweifel/git-auto-commit-action@v4.5.1
+        with:
+          repository: git-content
+          push_options: --force
+          commit_message: Publishing auto-converted artifacts
+          commit_user_name: CIS Automations
+          commit_user_email: controlsinfo@cisecurity.org
+          commit_author: CIS Automations <controlsinfo@cisecurity.org>
