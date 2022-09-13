@@ -2,9 +2,6 @@ on:
   push:
     branches:
       - '*'
-    paths:
-      - 'src/**'
-      - 'oscal'
   pull_request:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
@@ -12,8 +9,8 @@ on:
       - '*'
 name: Process Content Artifacts
 env:
-  OSCAL_DIR_PATH: oscal
-  CICD_DIR_PATH: oscal/build/ci-cd
+  OSCAL_DIR_PATH: OSCAL
+  CICD_DIR_PATH: OSCAL/build/ci-cd
   CONTENT_CONFIG_PATH: src/config
   SAXON_VERSION: 10.8
   HOME_REPO: ginger-anderson/CISControls_OSCAL
