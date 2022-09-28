@@ -6,9 +6,9 @@
  uuid="e95fb23c-57d2-495f-8ab5-2c6b3152bcee">
  <metadata>
   <title>CIS Controls</title>
-  <last-modified>2022-01-19T16:00:34.033789-05:00</last-modified>
+  <last-modified>2020-09-20T12:10:00.001-04:00</last-modified>
   <version>8.0</version>
-  <oscal-version>1.0.0</oscal-version>
+  <oscal-version>1.0.4</oscal-version>
   <prop name="keywords" value="contol, assessment"/>
   <link rel="alternate" media-type="text/html"
    href="https://controls-assessment-specification.readthedocs.io/en/stable/index.html"/>

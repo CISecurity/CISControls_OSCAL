@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This is a mapping example used for development. This file should be moved to the oscal-content repo when this feature is ready. -->
 <mapping-collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../OSCAL/mapping.xsd"
+	xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../OSCAL/xml/schema/oscal_complete_schema.xsd"
 	xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="3559d200-4849-41ac-a420-28b2ffa22c52">
 	<metadata>
 		<title>Example mapping between CIS controls and Cloud Controls Matrix v4.0.5</title>
-		<last-modified>2022-04-13T08:37:21.323321800-04:00</last-modified>
+		<last-modified>2020-09-20T12:10:00.001-04:00</last-modified>
 		<version>0.0.1</version>
-		<oscal-version>1.0.3</oscal-version>
+		<oscal-version>1.0.5</oscal-version>
 	</metadata>
 	<mapping uuid="9eb2019c-f3be-4f96-947e-58876a46b2a9">
 		<!-- update UID -->
