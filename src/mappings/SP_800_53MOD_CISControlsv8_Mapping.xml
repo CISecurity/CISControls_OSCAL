@@ -1,0 +1,1904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping-collection xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../xml/schema/oscal_complete_schema.xsd"
+	uuid="1c02b862-65b8-4019-b6f6-2cc32dba7c9c">
+    <metadata>
+        <title>Test version of mapping between CIS Controls v8 and NIST SP 800-53 Rev 5 Moderate</title>
+		<last-modified>2022-08-31T00:00:00.0000001-04:00</last-modified>
+        <version>0.0.1</version>
+        <oscal-version>1.1.0-alpha</oscal-version>
+    </metadata>
+	
+	<mapping uuid="4aeeabc6-0864-4656-9272-cb26c44d24ab">
+		<source-resource type="catalog" href="#7f0c0991-54d6-489a-a8d1-30e61b3de4fe"/>
+		<target-resource type="catalog" href="#13328e5a-c384-4d6e-ba6a-58dcd3ac82a9"/>
+		<map uuid="ce1c015d-78f2-4ce3-b392-0cad485189bb">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-1.1"/>
+			<target type="control" id-ref="#cm-8">
+			</target>
+		</map>
+		<map uuid="9119d47f-f97c-491f-9de1-fe40a41fb284">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-1.1"/>
+			<target type="control" id-ref="#cm-8.1">
+			</target>
+		</map>
+		<map uuid="60424349-4a3d-40e3-aa6d-08065fafe38e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-1.1"/>
+			<target type="control" id-ref="#pm-5">
+			</target>
+		</map>
+		<map uuid="4df29ed2-82af-4a6e-a5cc-558bc8cf5bf7">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-1.2"/>
+			<target type="control" id-ref="#cm-8.3">
+			</target>
+		</map>
+		<map uuid="98b10826-9a5f-450b-90f5-d7541663386d">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-1.3"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="093b4313-8e7f-408e-b690-c2c8d9f2ec25">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-1.4"/>
+			<target type="control" id-ref="#cm-8.3">
+			</target>
+		</map>
+		<map uuid="6fa93f4a-7949-4449-8d93-774d121c7cba">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-1.5"/>
+			<target type="control" id-ref="#cm-8.3">
+			</target>
+		</map>
+		<map uuid="3c053750-7e70-48b9-9501-cadf05e673b9">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-1.5"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="f974f3a9-a37b-452d-b301-815f6276787f">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.1"/>
+			<target type="control" id-ref="#cm-8">
+			</target>
+		</map>
+		<map uuid="3c31fc5b-9b0a-4008-a5d7-67e780796548">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.1"/>
+			<target type="control" id-ref="#cm-7.1">
+			</target>
+		</map>
+		<map uuid="f589851e-4181-46cf-9407-591c02c3b9b2">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-2.1"/>
+			<target type="control" id-ref="#ma-3">
+			</target>
+		</map>
+		<map uuid="337f610b-de52-42d4-83c3-8b1cc370a383">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-2.2"/>
+			<target type="control" id-ref="#ma-3">
+			</target>
+		</map>
+		<map uuid="473ebb04-80d8-47ab-8353-f17336d4885d">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.3"/>
+			<target type="control" id-ref="#cm-7.2">
+			</target>
+		</map>
+		<map uuid="dda32b87-378b-4354-91d5-18875d5cc609">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.3"/>
+			<target type="control" id-ref="#cm-8.3">
+			</target>
+		</map>
+		<map uuid="680d2732-12be-4a01-b134-828a2518a9b5">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.3"/>
+			<target type="control" id-ref="#cm-10">
+			</target>
+		</map>
+		<map uuid="38e52056-487f-40b1-a34c-4dda61591f22">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.3"/>
+			<target type="control" id-ref="#cm-11">
+			</target>
+		</map>
+		<map uuid="38c6bbb6-088d-467a-aed4-3047d5914c61">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.4"/>
+			<target type="control" id-ref="#cm-8.3">
+			</target>
+		</map>
+		<map uuid="7c658b74-9da5-458f-bc3b-fe5cf3b8318e">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-2.5"/>
+			<target type="control" id-ref="#cm-7.5">
+			</target>
+		</map>
+		<map uuid="82eacb53-e074-4c34-a83f-93958a6250f0">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-2.5"/>
+			<target type="control" id-ref="#cm-10">
+			</target>
+		</map>
+		<map uuid="9d933d52-c3c3-4474-80fa-2760f7643c94">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.6"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="07e8c762-9dee-4d2e-9839-04d11f6b99d0">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-2.6"/>
+			<target type="control" id-ref="#cm-7.1">
+			</target>
+		</map>
+		<map uuid="7b75201f-11c1-45ab-ab74-8f3f3557c07d">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-2.7"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="1fa9c38d-f57a-42a9-8eec-09b2a29a19b5">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-2.7"/>
+			<target type="control" id-ref="#cm-7.1">
+			</target>
+		</map>
+		<map uuid="f0858f2e-255d-4fa6-b00a-69ff6bb3ec97">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-2.7"/>
+			<target type="control" id-ref="#si-7">
+			</target>
+		</map>
+		<map uuid="7ff44b79-3de4-490a-946a-47ba6eaf678b">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-2.7"/>
+			<target type="control" id-ref="#si-7.1">
+			</target>
+		</map>
+		<map uuid="b4c03158-db57-4b9b-9477-02335de9e0b6">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.1"/>
+			<target type="control" id-ref="#au-11">
+			</target>
+		</map>
+		<map uuid="c963d70a-fdd6-4e69-bb59-79cbbb2749c2">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.1"/>
+			<target type="control" id-ref="#cm-12">
+			</target>
+		</map>
+		<map uuid="60550b8d-57ba-4e1c-8bcd-89cfaeb3a0f7">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-3.1"/>
+			<target type="control" id-ref="#si-12">
+			</target>
+		</map>
+		<map uuid="1e651e31-a72d-4de4-b4bb-3e85c68f08c3">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.2"/>
+			<target type="control" id-ref="#cm-12">
+			</target>
+		</map>
+		<map uuid="9bd9c9e9-404b-48ce-a8b7-fcb2a33a39e9">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.2"/>
+			<target type="control" id-ref="#pm-5.1">
+			</target>
+		</map>
+		<map uuid="4804cb58-8dbd-4487-b365-a097be940e64">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.2"/>
+			<target type="control" id-ref="#ra-2">
+			</target>
+		</map>
+		<map uuid="d3c84e2f-08b4-43a3-89b1-affdb7314939">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.3"/>
+			<target type="control" id-ref="#ac-3">
+			</target>
+		</map>
+		<map uuid="d48a6c84-72a7-49b3-9326-56745725dbfd">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.3"/>
+			<target type="control" id-ref="#ac-5">
+			</target>
+		</map>
+		<map uuid="f0e090a3-aa0b-4350-96c5-c3a96ca0c6d8">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.3"/>
+			<target type="control" id-ref="#ac-6">
+			</target>
+		</map>
+		<map uuid="cb9e15f7-e661-4d22-ba19-2b1012bb9576">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.3"/>
+			<target type="control" id-ref="#mp-2">
+			</target>
+		</map>
+		<map uuid="32053cbc-f770-4b9a-8fc4-96f856789c60">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.4"/>
+			<target type="control" id-ref="#au-11">
+			</target>
+		</map>
+		<map uuid="087aadeb-23da-47a4-9095-7c78f4809bfa">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.4"/>
+			<target type="control" id-ref="#si-12">
+			</target>
+		</map>
+		<map uuid="1ccd15e0-cd69-4e0d-a728-02d084ddb0ee">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.5"/>
+			<target type="control" id-ref="#mp-6">
+			</target>
+		</map>
+		<map uuid="97e626cb-8c89-4bcd-828f-58a4afd14907">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.5"/>
+			<target type="control" id-ref="#sr-12">
+			</target>
+		</map>
+		<map uuid="5f6fc0bb-d4bd-4bd0-ac17-c7a9e30c7bc0">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.6"/>
+			<target type="control" id-ref="#sc-28">
+			</target>
+		</map>
+		<map uuid="e7cf245f-a7ca-4e15-807f-94a6728f9c2d">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.7"/>
+			<target type="control" id-ref="#ra-2">
+			</target>
+		</map>
+		<map uuid="354d3a58-83cd-4744-a331-1e37a07bd762">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.8"/>
+			<target type="control" id-ref="#ac-4">
+			</target>
+		</map>
+		<map uuid="5ee6c6a2-1c82-4e0a-8d1b-a51ffee688a2">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.8"/>
+			<target type="control" id-ref="#cm-12">
+			</target>
+		</map>
+		<map uuid="64f6395f-2321-4487-8461-97ab19bb4b14">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.9"/>
+			<target type="control" id-ref="#mp-5">
+			</target>
+		</map>
+		<map uuid="2038388f-de93-4212-862b-1999e7c0b461">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.9"/>
+			<target type="control" id-ref="#mp-7">
+			</target>
+		</map>
+		<map uuid="40962bb7-360c-432d-ba89-7d5a80fded7e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#ac-17.2">
+			</target>
+		</map>
+		<map uuid="1f62a5da-14bf-41cd-8471-dd498a2dd835">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#ia-5">
+			</target>
+		</map>
+		<map uuid="a0591ee6-3d21-4a95-bda6-682743be3ce2">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#ia-5.1">
+			</target>
+		</map>
+		<map uuid="5432ecad-d5e1-42a5-ac04-5158dc5feb07">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#sc-8">
+			</target>
+		</map>
+		<map uuid="4fb44a45-6642-421e-a9b5-c51fcf408075">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.10"/>
+			<target type="control" id-ref="#sc-8.1">
+			</target>
+		</map>
+		<map uuid="6bbe120c-cd42-4a25-b29f-a9a319f8ddc2">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.11"/>
+			<target type="control" id-ref="#ia-5.1">
+			</target>
+		</map>
+		<map uuid="3ffe3e11-791a-4686-b4fd-a224201456e1">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-3.11"/>
+			<target type="control" id-ref="#sc-28">
+			</target>
+		</map>
+		<map uuid="93d0afc9-9147-4ddb-bf4a-7e6a1a7589e8">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-3.11"/>
+			<target type="control" id-ref="#sc-28.1">
+			</target>
+		</map>
+		<map uuid="90c38e5f-fde0-4584-9c23-ea019bb7e3fc">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.13"/>
+			<target type="control" id-ref="#ca-7">
+			</target>
+		</map>
+		<map uuid="0397304a-be19-407c-849e-506b6a293508">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.13"/>
+			<target type="control" id-ref="#cm-12">
+			</target>
+		</map>
+		<map uuid="95de4dd7-db4e-4579-86ab-3ab2ecf41794">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.13"/>
+			<target type="control" id-ref="#cm-12.1">
+			</target>
+		</map>
+		<map uuid="8745ace9-acc5-41c3-a36f-4af8b7627c95">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.13"/>
+			<target type="control" id-ref="#sc-4">
+			</target>
+		</map>
+		<map uuid="93889933-580f-49b7-bc7a-79bc8def69d2">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.14"/>
+			<target type="control" id-ref="#ac-6.9">
+			</target>
+		</map>
+		<map uuid="ea40829c-1b2a-407b-a255-e2361aadffaa">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.14"/>
+			<target type="control" id-ref="#au-2">
+			</target>
+		</map>
+		<map uuid="78935526-24a1-4c76-ac81-cd9918f694a7">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-3.14"/>
+			<target type="control" id-ref="#au-12">
+			</target>
+		</map>
+		<map uuid="d117625c-5e3d-471c-82d2-ad669d2f3116">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#cm-1">
+			</target>
+		</map>
+		<map uuid="e906fc8d-dca3-4a99-98ab-40231f313d29">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#cm-2">
+			</target>
+		</map>
+		<map uuid="a90280cc-1265-4ab2-8367-0451d95daf73">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#cm-6">
+			</target>
+		</map>
+		<map uuid="ec30f2e3-7db6-435f-8dbd-b9a62ecd6c1c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="84ac59c0-eab7-44cd-9a81-7ef8b3c0be84">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#cm-7.1">
+			</target>
+		</map>
+		<map uuid="7e97d927-fd1b-4fba-b8ed-cc76c502acb5">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#cm-9">
+			</target>
+		</map>
+		<map uuid="4951947e-c9f4-4ffe-a18e-dc9f7005c159">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#sa-3">
+			</target>
+		</map>
+		<map uuid="4536af51-34d1-4f21-b5e5-4ea8a8a82dea">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#sa-8">
+			</target>
+		</map>
+		<map uuid="b5b5d743-1603-4679-88d0-02a26079f8d9">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.1"/>
+			<target type="control" id-ref="#sa-10">
+			</target>
+		</map>
+		<map uuid="0622cfd5-83b4-4ddd-9392-01df9052bde1">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#ac-18">
+			</target>
+		</map>
+		<map uuid="2688f0d6-0a9b-4bf4-a7a0-1a7f51d5da4a">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#ac-18.1">
+			</target>
+		</map>
+		<map uuid="3940c73f-988b-4dea-ae40-6e5f52a7a7fe">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#ac-18.3">
+			</target>
+		</map>
+		<map uuid="708605de-68be-4d32-9a6b-84407723ce7c">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#cm-2">
+			</target>
+		</map>
+		<map uuid="a03515a2-2235-406b-b1b4-93c99075e379">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#cm-6">
+			</target>
+		</map>
+		<map uuid="c05df3ff-da2d-4269-a514-da4953c36320">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="03c77df2-23e8-40e1-98ed-b7b54da8d96a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#cm-7.1">
+			</target>
+		</map>
+		<map uuid="9a912cc8-9096-486b-a8dd-3cbbc746f80d">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-4.2"/>
+			<target type="control" id-ref="#cm-9">
+			</target>
+		</map>
+		<map uuid="ba47a836-06d0-4ffc-937d-7b61607735b9">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.3"/>
+			<target type="control" id-ref="#ac-2.5">
+			</target>
+		</map>
+		<map uuid="c3421411-e13d-4b04-adf0-d6503aae7ccf">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-4.3"/>
+			<target type="control" id-ref="#ac-11">
+			</target>
+		</map>
+		<map uuid="0000695c-21f5-4ab7-abb7-eda504de5884">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.3"/>
+			<target type="control" id-ref="#ac-11.1">
+			</target>
+		</map>
+		<map uuid="62e4bd3a-a2e8-4361-abbe-33d3270c4858">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.3"/>
+			<target type="control" id-ref="#ac-12">
+			</target>
+		</map>
+		<map uuid="8d7de3f9-4d1a-4463-a248-7f242f5bf10d">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.4"/>
+			<target type="control" id-ref="#sc-7">
+			</target>
+		</map>
+		<map uuid="c7f8760d-ee6b-492a-8308-bba3e95f6a23">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.4"/>
+			<target type="control" id-ref="#sc-7.5">
+			</target>
+		</map>
+		<map uuid="e7c5f2f5-dcee-459f-b955-037208f70c4e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.5"/>
+			<target type="control" id-ref="#sc-7">
+			</target>
+		</map>
+		<map uuid="10d24bb2-0235-44df-b020-ad5ea699d8c5">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.5"/>
+			<target type="control" id-ref="#sc-7.5">
+			</target>
+		</map>
+		<map uuid="e5919821-4863-4e29-9f03-3b8c488e614e">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-4.6"/>
+			<target type="control" id-ref="#sc-7.5">
+			</target>
+		</map>
+		<map uuid="d9ebfd18-8ebc-4147-a8d0-4020f0f98ab4">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-4.6"/>
+			<target type="control" id-ref="#ma-4">
+			</target>
+		</map>
+		<map uuid="88cbf754-ecb4-4730-9375-4ae5e14eadc1">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.7"/>
+			<target type="control" id-ref="#ia-5">
+			</target>
+		</map>
+		<map uuid="84ea6846-6d51-4ae5-9979-b59dd9a75b6e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.8"/>
+			<target type="control" id-ref="#cm-6">
+			</target>
+		</map>
+		<map uuid="5b5369da-29a5-489d-a392-92fea16b1b52">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.8"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="8a570341-bd17-4151-92df-3fdd38129848">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.9"/>
+			<target type="control" id-ref="#sc-20">
+			</target>
+		</map>
+		<map uuid="abd549a3-7a2d-48a4-9f71-07ecfd8680c5">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.9"/>
+			<target type="control" id-ref="#sc-21">
+			</target>
+		</map>
+		<map uuid="70e81554-6c0b-4a1c-8f73-be222350ba5f">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.9"/>
+			<target type="control" id-ref="#sc-22">
+			</target>
+		</map>
+		<map uuid="f7080bc4-69a9-4025-ac92-d4e4b80c81fb">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.10"/>
+			<target type="control" id-ref="#ac-7">
+			</target>
+		</map>
+		<map uuid="6be9bf4c-0ca7-4567-8476-212ba62058c6">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.10"/>
+			<target type="control" id-ref="#ac-19">
+			</target>
+		</map>
+		<map uuid="75785bb5-ceee-4127-baef-0894b594cde2">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.11"/>
+			<target type="control" id-ref="#ac-19">
+			</target>
+		</map>
+		<map uuid="c102015c-4483-4dde-94c0-1dc64b9b977a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.11"/>
+			<target type="control" id-ref="#ac-20">
+			</target>
+		</map>
+		<map uuid="259c9c8b-3d3e-493d-959d-4a9a1dce90fc">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-4.12"/>
+			<target type="control" id-ref="#ac-19.5">
+			</target>
+		</map>
+		<map uuid="1ce38c9b-9067-4fbc-a861-890a0d71971e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-4.12"/>
+			<target type="control" id-ref="#sc-39">
+			</target>
+		</map>
+		<map uuid="65529faf-49fb-487d-a238-131a2854c5c8">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-5.1"/>
+			<target type="control" id-ref="#ac-2">
+			</target>
+		</map>
+		<map uuid="1bdef380-a555-44c0-9886-9958bdb7aac3">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-5.2"/>
+			<target type="control" id-ref="#ia-5.1">
+			</target>
+		</map>
+		<map uuid="851280af-b996-4792-81c8-3b1a2a2b21c9">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-5.3"/>
+			<target type="control" id-ref="#ac-2.3">
+			</target>
+		</map>
+		<map uuid="d3522f55-5ae0-495a-8762-dba5aa914b0a">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-5.4"/>
+			<target type="control" id-ref="#ac-6.2">
+			</target>
+		</map>
+		<map uuid="5fb7867a-9b81-434b-a23c-2e30f381bf8c">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-5.4"/>
+			<target type="control" id-ref="#ac-6.5">
+			</target>
+		</map>
+		<map uuid="beca2093-6e82-4da7-a6af-9c0ad80c964c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-5.5"/>
+			<target type="control" id-ref="#ac-2">
+			</target>
+		</map>
+		<map uuid="9c60fba3-a412-4f87-a4fb-6ca1e1e52ef3">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-5.6"/>
+			<target type="control" id-ref="#ac-2.1">
+			</target>
+		</map>
+		<map uuid="9ae7c04e-faca-4b44-bd15-0208acacc915">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.1"/>
+			<target type="control" id-ref="#ia-4">
+			</target>
+		</map>
+		<map uuid="336b3717-098f-427e-af75-94cb01faef44">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.1"/>
+			<target type="control" id-ref="#ia-5">
+			</target>
+		</map>
+		<map uuid="12554185-6a09-4771-a544-74569de705c6">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.1"/>
+			<target type="control" id-ref="#ac-1">
+			</target>
+		</map>
+		<map uuid="c635c8ad-01ac-45da-9bc6-a48cb4f0930a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.1"/>
+			<target type="control" id-ref="#ac-2">
+			</target>
+		</map>
+		<map uuid="f6713a23-5aa7-47e7-bd36-d6fa07166580">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.1"/>
+			<target type="control" id-ref="#ac-2.1">
+			</target>
+		</map>
+		<map uuid="9e5689e1-28f8-44a5-8971-3f5772f6ec86">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.2"/>
+			<target type="control" id-ref="#ac-1">
+			</target>
+		</map>
+		<map uuid="c220e7a6-54f5-4424-9cf5-9ca9eeab5f13">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.2"/>
+			<target type="control" id-ref="#ac-2">
+			</target>
+		</map>
+		<map uuid="0fa2c8fc-2353-4f3e-a727-536a0ba6a028">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.2"/>
+			<target type="control" id-ref="#ac-2.1">
+			</target>
+		</map>
+		<map uuid="73d689c1-4d23-4007-8f08-d01bd829ba3d">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.3"/>
+			<target type="control" id-ref="#ia-2.1">
+			</target>
+		</map>
+		<map uuid="d5943120-7f35-4671-be2c-efbf4516c89b">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.3"/>
+			<target type="control" id-ref="#ia-2.2">
+			</target>
+		</map>
+		<map uuid="b0856d5e-a871-45eb-8242-8fd57463d849">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.4"/>
+			<target type="control" id-ref="#ac-19">
+			</target>
+		</map>
+		<map uuid="5afabd22-c2bf-4858-914b-fb2295979754">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.4"/>
+			<target type="control" id-ref="#ia-2.1">
+			</target>
+		</map>
+		<map uuid="0f90a6c9-643d-4c2c-bd5d-1542a5120918">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.4"/>
+			<target type="control" id-ref="#ia-2.2">
+			</target>
+		</map>
+		<map uuid="38ecf6a5-c0ad-4107-9724-235058d8a714">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-6.5"/>
+			<target type="control" id-ref="#ia-2.1">
+			</target>
+		</map>
+		<map uuid="10feea9b-eabd-41be-a1c8-9f27714e26a6">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.6"/>
+			<target type="control" id-ref="#cm-8">
+			</target>
+		</map>
+		<map uuid="a4f15ac0-13bd-42f9-8fcb-cc4203ba2924">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.6"/>
+			<target type="control" id-ref="#ia-8.2">
+			</target>
+		</map>
+		<map uuid="db9d7e04-62d9-4c08-8a5e-4314b8cc3dd7">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.7"/>
+			<target type="control" id-ref="#ac-2.1">
+			</target>
+		</map>
+		<map uuid="1eca42a0-296e-4746-be8c-9a63fe76d813">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.7"/>
+			<target type="control" id-ref="#ac-3">
+			</target>
+		</map>
+		<map uuid="84daebec-bfef-4592-92bf-716495ace2aa">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#ac-2">
+			</target>
+		</map>
+		<map uuid="338f8677-0192-4a91-93a3-0a13c4fffc93">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#ac-5">
+			</target>
+		</map>
+		<map uuid="47a0e272-bdbe-473b-bc5a-670809704d80">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#ac-6">
+			</target>
+		</map>
+		<map uuid="4ad8a3ec-ae3e-4467-8ac0-1eab3e142280">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#ac-6.1">
+			</target>
+		</map>
+		<map uuid="3e40c4f2-212d-430a-8f17-9c2ff74eb4aa">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#ac-6.7">
+			</target>
+		</map>
+		<map uuid="f54fc942-661d-491d-ac66-eb9476fc6c79">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-6.8"/>
+			<target type="control" id-ref="#au-9.4">
+			</target>
+		</map>
+		<map uuid="ed94dba8-7dc5-4a0a-83b4-76ca3de4baad">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-7.1"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="70fb9dab-f578-4bfe-9302-71396524ebc4">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-7.2"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="41d5f7f3-66d4-49e6-8fda-2335899d2d1c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.3"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="fe59a21a-2c7f-4351-a141-3b77d0bcd5ba">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.3"/>
+			<target type="control" id-ref="#ra-7">
+			</target>
+		</map>
+		<map uuid="fb995543-166c-4e88-840b-b6f8dd44c755">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.3"/>
+			<target type="control" id-ref="#si-2">
+			</target>
+		</map>
+		<map uuid="8e2ec4d4-a09e-4b1f-a5b2-f157cd786518">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.3"/>
+			<target type="control" id-ref="#si-2.2">
+			</target>
+		</map>
+		<map uuid="96ffd056-b4a7-4c6b-b033-dde80bba9238">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.4"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="94e2de5a-fe65-44b9-82c3-6cbbf23e543f">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.4"/>
+			<target type="control" id-ref="#ra-7">
+			</target>
+		</map>
+		<map uuid="2757673c-827c-4999-978c-16150a991d43">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.4"/>
+			<target type="control" id-ref="#si-2">
+			</target>
+		</map>
+		<map uuid="1ac6ad8a-21f8-4f87-88e4-3b867b20029c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.4"/>
+			<target type="control" id-ref="#si-2.2">
+			</target>
+		</map>
+		<map uuid="d122ffc7-4d04-4983-8bc3-9a7af50caa54">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.5"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="b3ea7d90-e68c-4659-a9c7-8875221eb8e8">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.6"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="1391bc9b-0f52-4b66-86e3-68a39e2082e9">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.7"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="da9a188c-b77d-41ce-92bc-560072dfed4c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.7"/>
+			<target type="control" id-ref="#ra-5.2">
+			</target>
+		</map>
+		<map uuid="e3d7c664-f0a8-43b0-bd75-538711a8e10e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.7"/>
+			<target type="control" id-ref="#ra-7">
+			</target>
+		</map>
+		<map uuid="8d01f3a6-0a7a-4d1d-852e-3b0b93332854">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-7.7"/>
+			<target type="control" id-ref="#si-2">
+			</target>
+		</map>
+		<map uuid="b274e2c5-b008-4295-9921-cfc428050d0f">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-8.1"/>
+			<target type="control" id-ref="#au-1">
+			</target>
+		</map>
+		<map uuid="f37bd386-45c4-471c-bf2f-b75d7cfd1827">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-8.1"/>
+			<target type="control" id-ref="#au-2">
+			</target>
+		</map>
+		<map uuid="7a70f052-43fd-49ee-b217-925b88a142d3">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-8.2"/>
+			<target type="control" id-ref="#au-2">
+			</target>
+		</map>
+		<map uuid="23aa36d5-89c1-40c2-ab12-d24aacc6c05d">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-8.2"/>
+			<target type="control" id-ref="#au-7">
+			</target>
+		</map>
+		<map uuid="b665627b-d034-4ded-a819-90ebdbf395a9">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-8.2"/>
+			<target type="control" id-ref="#au-12">
+			</target>
+		</map>
+		<map uuid="8e1dc08a-db2d-4b43-8c70-b0b4a6512728">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-8.3"/>
+			<target type="control" id-ref="#au-4">
+			</target>
+		</map>
+		<map uuid="ddd2fb16-cee6-4037-aa6e-f7fe0de1f02c">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-8.4"/>
+			<target type="control" id-ref="#au-7">
+			</target>
+		</map>
+		<map uuid="fc1efc41-bd66-4072-9a7a-a21f73747e18">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.4"/>
+			<target type="control" id-ref="#au-8">
+			</target>
+		</map>
+		<map uuid="25ce6483-55db-4ef1-a71e-208fdda101d6">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-8.5"/>
+			<target type="control" id-ref="#au-3">
+			</target>
+		</map>
+		<map uuid="dc47b9be-d06a-453d-836e-bf548d6c01ae">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.5"/>
+			<target type="control" id-ref="#au-3.1">
+			</target>
+		</map>
+		<map uuid="d5325e16-5ae7-4f7c-885a-05778cbc7f9d">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-8.5"/>
+			<target type="control" id-ref="#au-7">
+			</target>
+		</map>
+		<map uuid="94dddb59-25d4-4da4-9e18-8d8e19f8d968">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.5"/>
+			<target type="control" id-ref="#au-12">
+			</target>
+		</map>
+		<map uuid="22c745e6-701c-4489-87c6-591763cb9a42">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.6"/>
+			<target type="control" id-ref="#au-2">
+			</target>
+		</map>
+		<map uuid="bcf6fd52-be09-45dc-8ad4-2bf10ff7a07a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.7"/>
+			<target type="control" id-ref="#au-2">
+			</target>
+		</map>
+		<map uuid="a8875d3b-f1e2-4472-88cb-d9a7c2d117d1">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.8"/>
+			<target type="control" id-ref="#au-2">
+			</target>
+		</map>
+		<map uuid="eef59c4a-ac76-49fb-b325-b9a7fb784c83">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.9"/>
+			<target type="control" id-ref="#au-6.3">
+			</target>
+		</map>
+		<map uuid="c7638dc8-635d-4f9e-85b2-1f324bc1499a">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-8.10"/>
+			<target type="control" id-ref="#au-11">
+			</target>
+		</map>
+		<map uuid="9adabf10-8d7e-48bf-a833-936d4c675198">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-8.11"/>
+			<target type="control" id-ref="#au-6">
+			</target>
+		</map>
+		<map uuid="03018e23-16a7-479e-8f1e-3a29f5190cea">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.11"/>
+			<target type="control" id-ref="#au-6.1">
+			</target>
+		</map>
+		<map uuid="70b92c0a-2bad-4f5b-aad7-fcddf7f31078">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-8.11"/>
+			<target type="control" id-ref="#au-7.1">
+			</target>
+		</map>
+		<map uuid="4d3ee6f1-687f-4e57-a630-a4f8d9c04a86">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-8.12"/>
+			<target type="control" id-ref="#au-2">
+			</target>
+		</map>
+		<map uuid="b00117c9-2166-4722-929b-b7ef5cfe4ca0">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.1"/>
+			<target type="control" id-ref="#cm-10">
+			</target>
+		</map>
+		<map uuid="3ca5cf32-37c1-498b-9bba-567ff158d951">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-9.1"/>
+			<target type="control" id-ref="#sc-18">
+			</target>
+		</map>
+		<map uuid="aabe0a7a-cd24-4073-a6fe-0db7a4094374">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-9.2"/>
+			<target type="control" id-ref="#si-8">
+			</target>
+		</map>
+		<map uuid="ea7d9eb7-23c5-4b04-ab78-cbb7fee821a6">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.3"/>
+			<target type="control" id-ref="#si-7.3">
+			</target>
+		</map>
+		<map uuid="9d80b47a-30cf-4373-9fd3-8b4af31f2088">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.3"/>
+			<target type="control" id-ref="#si-7.4">
+			</target>
+		</map>
+		<map uuid="dcf079e7-4bd4-4863-b4bd-a50d9c8384d1">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.4"/>
+			<target type="control" id-ref="#cm-10">
+			</target>
+		</map>
+		<map uuid="362f52d1-7d20-4dd1-bf44-8f85f85f6984">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-9.4"/>
+			<target type="control" id-ref="#cm-11">
+			</target>
+		</map>
+		<map uuid="3f2820a0-9497-41a9-ab34-9d2c678463c6">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-9.4"/>
+			<target type="control" id-ref="#sc-18">
+			</target>
+		</map>
+		<map uuid="184be8d5-6a81-44f1-abba-4916ceba508b">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.5"/>
+			<target type="control" id-ref="#sc-7">
+			</target>
+		</map>
+		<map uuid="fed94462-38ee-48cd-8e96-7eb0b64b79fa">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.6"/>
+			<target type="control" id-ref="#si-3">
+			</target>
+		</map>
+		<map uuid="7419fcb7-68f7-4e44-af23-8b2203a61617">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.6"/>
+			<target type="control" id-ref="#si-8">
+			</target>
+		</map>
+		<map uuid="4698fbe9-08f0-4d0f-8eca-2b9fcffbbf86">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.7"/>
+			<target type="control" id-ref="#si-3">
+			</target>
+		</map>
+		<map uuid="1f08d90e-08d8-4a02-867c-0833f6412df6">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-9.7"/>
+			<target type="control" id-ref="#si-8">
+			</target>
+		</map>
+		<map uuid="787b6525-6366-4d1e-a82f-bc8ab82fadde">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-9.7"/>
+			<target type="control" id-ref="#si-16">
+			</target>
+		</map>
+		<map uuid="be11c32e-7b52-43be-80bb-7d684823af42">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.1"/>
+			<target type="control" id-ref="#si-3">
+			</target>
+		</map>
+		<map uuid="e73fba48-1e2d-46dd-b96f-52aa1d1c3c85">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.2"/>
+			<target type="control" id-ref="#si-3">
+			</target>
+		</map>
+		<map uuid="0cd6cfb8-6dc4-40ed-b179-95e5ee1daa59">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.3"/>
+			<target type="control" id-ref="#mp-7">
+			</target>
+		</map>
+		<map uuid="a45625a4-fb96-4bf0-a0e4-3106585a3a59">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.4"/>
+			<target type="control" id-ref="#mp-7">
+			</target>
+		</map>
+		<map uuid="575d9312-f903-4343-a8d9-e688d0a36785">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.4"/>
+			<target type="control" id-ref="#si-3">
+			</target>
+		</map>
+		<map uuid="b93888a3-aa0a-47e7-a2c6-05801a06493e">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-10.5"/>
+			<target type="control" id-ref="#si-16">
+			</target>
+		</map>
+		<map uuid="99546614-5fda-4e41-95ae-e8643b399697">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.6"/>
+			<target type="control" id-ref="#si-3">
+			</target>
+		</map>
+		<map uuid="11698079-b0ea-415b-84a0-ebc341d7a358">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-10.7"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="ac62b172-166c-4c2a-b3d8-ecf96687d843">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.1"/>
+			<target type="control" id-ref="#cp-2">
+			</target>
+		</map>
+		<map uuid="532bef9b-e6a9-4a74-9129-4f4d7c8f6eef">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.1"/>
+			<target type="control" id-ref="#cp-10">
+			</target>
+		</map>
+		<map uuid="e09b5352-ef70-49a7-bd84-1678debf5860">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.2"/>
+			<target type="control" id-ref="#cp-9">
+			</target>
+		</map>
+		<map uuid="1a43af42-0759-405e-a62d-c1d7197c3809">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.2"/>
+			<target type="control" id-ref="#cp-10">
+			</target>
+		</map>
+		<map uuid="0f5bf591-e8cf-4fa7-8e1a-870fa4cfa2a3">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.3"/>
+			<target type="control" id-ref="#cp-9">
+			</target>
+		</map>
+		<map uuid="099d1ade-e7d0-4bf4-9807-1abd2ba5f049">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.3"/>
+			<target type="control" id-ref="#cp-9.8">
+			</target>
+		</map>
+		<map uuid="23b081ca-8a8a-44a8-b70d-a32078562330">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.3"/>
+			<target type="control" id-ref="#sc-28">
+			</target>
+		</map>
+		<map uuid="81400d2c-0b09-418a-9c9b-e88e2d18d8b9">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-11.4"/>
+			<target type="control" id-ref="#cp-6">
+			</target>
+		</map>
+		<map uuid="df9ef030-127e-4037-ba45-500f01742514">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-11.4"/>
+			<target type="control" id-ref="#cp-6.1">
+			</target>
+		</map>
+		<map uuid="0e9b27af-944a-4547-a18e-f1108d1e123a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.5"/>
+			<target type="control" id-ref="#cp-4">
+			</target>
+		</map>
+		<map uuid="e63abe1a-99d8-4029-bc46-bbd9d3fb8506">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-11.5"/>
+			<target type="control" id-ref="#cp-9.1">
+			</target>
+		</map>
+		<map uuid="f44f958d-3c09-4841-9c2e-0b4c87f13964">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-12.1"/>
+			<target type="control" id-ref="#cm-8">
+			</target>
+		</map>
+		<map uuid="bf885348-45f9-42b0-a1d2-c04d34e4cf15">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-12.1"/>
+			<target type="control" id-ref="#cm-8.1">
+			</target>
+		</map>
+		<map uuid="697114d2-51b3-4f57-bf1c-5d02b102da9f">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#pl-8">
+			</target>
+		</map>
+		<map uuid="776acd84-4e33-46e0-ab28-1213535c0b6c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#pm-7">
+			</target>
+		</map>
+		<map uuid="80311f56-32c4-4cfb-8ffe-597b4cebb644">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#sa-8">
+			</target>
+		</map>
+		<map uuid="37a6fd8f-dad9-43e8-8e3f-021ee92aa209">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="57bb5111-e037-4061-b777-a4a03cb9e3df">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#cp-6">
+			</target>
+		</map>
+		<map uuid="fde65296-8549-46bb-bf99-c85ba6ffd7f0">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#cp-7">
+			</target>
+		</map>
+		<map uuid="b1d760f8-5414-4ea3-953d-d5deda19c421">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-12.2"/>
+			<target type="control" id-ref="#sc-7">
+			</target>
+		</map>
+		<map uuid="10769617-2279-435b-ae22-aa2d055639cb">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.3"/>
+			<target type="control" id-ref="#cm-6">
+			</target>
+		</map>
+		<map uuid="c9cb98d0-2eb1-4985-9b06-e5d1d05b4ce3">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.3"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="252f6af5-c0c1-4dd0-845f-d6b69d0fcc7f">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.3"/>
+			<target type="control" id-ref="#sc-23">
+			</target>
+		</map>
+		<map uuid="b2112cd4-343f-4016-8288-dd60398cf479">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.4"/>
+			<target type="control" id-ref="#pl-8">
+			</target>
+		</map>
+		<map uuid="bd323b4c-9b84-4a04-a8f4-a65bd386bf9f">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.4"/>
+			<target type="control" id-ref="#pm-5">
+			</target>
+		</map>
+		<map uuid="a0d60826-1f21-4c04-90da-68db18a8814a">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-12.5"/>
+			<target type="control" id-ref="#ac-2.1">
+			</target>
+		</map>
+		<map uuid="54efc150-bf43-4900-becd-19cfe1a3b9d9">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.6"/>
+			<target type="control" id-ref="#ac-18">
+			</target>
+		</map>
+		<map uuid="d4a94d70-dd2c-4699-8f6b-badd2bd4446c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.6"/>
+			<target type="control" id-ref="#sc-23">
+			</target>
+		</map>
+		<map uuid="16d6f7d8-2fe9-4081-ac16-8ec374b76a54">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.7"/>
+			<target type="control" id-ref="#ac-17">
+			</target>
+		</map>
+		<map uuid="07e0bfa4-728f-4165-9f72-edbfdddffb40">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.7"/>
+			<target type="control" id-ref="#ac-17.1">
+			</target>
+		</map>
+		<map uuid="056aec4d-7130-48ef-9c35-3ad9149e0392">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-12.7"/>
+			<target type="control" id-ref="#ac-17.3">
+			</target>
+		</map>
+		<map uuid="942491f7-56fb-4005-ad92-5b9a2dea6baa">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-12.8"/>
+			<target type="control" id-ref="#ac-17.3">
+			</target>
+		</map>
+		<map uuid="aa958d18-34a2-49c6-9811-ce80036a0be9">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-12.8"/>
+			<target type="control" id-ref="#si-7">
+			</target>
+		</map>
+		<map uuid="9740fe55-9224-4e30-b8c4-065de0914cd1">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.1"/>
+			<target type="control" id-ref="#au-6.1">
+			</target>
+		</map>
+		<map uuid="429e4bc0-96f8-4c81-81f2-518ff0a3a1ec">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.1"/>
+			<target type="control" id-ref="#au-7">
+			</target>
+		</map>
+		<map uuid="6ba53694-0622-4e39-b6b8-f1df45554e5b">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-13.1"/>
+			<target type="control" id-ref="#ir-4.1">
+			</target>
+		</map>
+		<map uuid="7411480e-56de-4242-b285-8b6b7b901c8d">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-13.1"/>
+			<target type="control" id-ref="#si-4.2">
+			</target>
+		</map>
+		<map uuid="c444075c-0817-45e8-ac3c-f45dd0e14c74">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.1"/>
+			<target type="control" id-ref="#si-4.5">
+			</target>
+		</map>
+		<map uuid="74bdac5a-9ce7-4e95-83d4-42cfb5c3bdeb">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.3"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="b88f9806-28cc-4338-bf58-8dfe692b7545">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.3"/>
+			<target type="control" id-ref="#si-4.4">
+			</target>
+		</map>
+		<map uuid="62d47324-f4a3-47af-8d94-25ce6365dcc4">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.4"/>
+			<target type="control" id-ref="#ca-9">
+			</target>
+		</map>
+		<map uuid="4e44cb2d-60b1-4466-8a84-793c19889bb1">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.4"/>
+			<target type="control" id-ref="#sc-7">
+			</target>
+		</map>
+		<map uuid="b0de353f-b83a-40ff-a9fa-67ccf2d6356e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.5"/>
+			<target type="control" id-ref="#ac-17">
+			</target>
+		</map>
+		<map uuid="d5879d32-947b-48b0-bf28-b62c2ad0d87e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.5"/>
+			<target type="control" id-ref="#ac-17.1">
+			</target>
+		</map>
+		<map uuid="84b128d2-0323-4950-9a29-0f98ed8447ed">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.5"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="a641f7ea-2b77-4abe-a763-1bb09186ef26">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.5"/>
+			<target type="control" id-ref="#sc-7">
+			</target>
+		</map>
+		<map uuid="fa8ad852-0958-4e90-b89b-0da65c47ff90">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.6"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="7675eb8c-4a9c-472b-b664-76b8aeef8c9b">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-13.6"/>
+			<target type="control" id-ref="#si-4.4">
+			</target>
+		</map>
+		<map uuid="44af4e56-52e7-4269-93fd-5ff71cb3e1e2">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.8"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="77040c71-ca24-4de0-ae05-4a486d5b0f2c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.8"/>
+			<target type="control" id-ref="#si-4.4">
+			</target>
+		</map>
+		<map uuid="d316a157-aa2c-4da9-aefc-f5ecda8354a5">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.9"/>
+			<target type="control" id-ref="#cm-6">
+			</target>
+		</map>
+		<map uuid="0ff5ce8a-80ad-448c-a336-b0967f66c402">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.9"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="5aca270a-2caa-4be3-b4d3-3e81f60fb2bf">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-13.10"/>
+			<target type="control" id-ref="#sc-7.8">
+			</target>
+		</map>
+		<map uuid="1f6bd2b7-6cee-436f-8d28-e5decc526a59">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-13.11"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="a1835fa5-450b-472a-92a5-d3ba32149d4e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.1"/>
+			<target type="control" id-ref="#at-1">
+			</target>
+		</map>
+		<map uuid="5f8ef2ca-4433-436d-963f-fa9621d5b310">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.1"/>
+			<target type="control" id-ref="#at-2">
+			</target>
+		</map>
+		<map uuid="48ffdc81-ae6e-4fca-acfc-4c8943f731e1">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-14.1"/>
+			<target type="control" id-ref="#pm-13">
+			</target>
+		</map>
+		<map uuid="1653ae63-71c4-4335-b26f-d6bf6e849ede">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-14.2"/>
+			<target type="control" id-ref="#at-2.3">
+			</target>
+		</map>
+		<map uuid="2ca4967c-6d7f-418f-ac0a-92364b918ca1">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.3"/>
+			<target type="control" id-ref="#at-2">
+			</target>
+		</map>
+		<map uuid="9e3ba31a-2f45-4733-9091-85b1c81bcd9a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.4"/>
+			<target type="control" id-ref="#at-2">
+			</target>
+		</map>
+		<map uuid="25aac9e1-f43c-4973-b329-cbdad83e8938">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.5"/>
+			<target type="control" id-ref="#ac-22">
+			</target>
+		</map>
+		<map uuid="c6c382b7-e7ca-4d36-86c9-a547a1a7f70f">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.6"/>
+			<target type="control" id-ref="#at-2">
+			</target>
+		</map>
+		<map uuid="035175f9-d27a-486e-a8aa-e546c6a9d9fb">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.7"/>
+			<target type="control" id-ref="#at-2">
+			</target>
+		</map>
+		<map uuid="654d6c0e-1a5f-43e8-b28a-e2ad72f5123c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.8"/>
+			<target type="control" id-ref="#at-2">
+			</target>
+		</map>
+		<map uuid="fae8b18e-b4a5-430f-a40e-c6ccfc99f70a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-14.9"/>
+			<target type="control" id-ref="#at-2">
+			</target>
+		</map>
+		<map uuid="490dc6f4-1d06-4e1c-ab98-7163bd1ab7a1">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-15.1"/>
+			<target type="control" id-ref="#pm-30.1">
+			</target>
+		</map>
+		<map uuid="4d764007-96a2-4c62-92bc-a08f753bf2f5">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-15.2"/>
+			<target type="control" id-ref="#ac-21">
+			</target>
+		</map>
+		<map uuid="4d963529-18d7-4aca-b723-f4d33d887128">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.2"/>
+			<target type="control" id-ref="#sa-9">
+			</target>
+		</map>
+		<map uuid="7202e0f7-5292-4247-98ed-5808992de31a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.2"/>
+			<target type="control" id-ref="#sa-9.2">
+			</target>
+		</map>
+		<map uuid="45f6d5c4-7e7d-435a-b8e7-a8bef18973f7">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.2"/>
+			<target type="control" id-ref="#pm-30">
+			</target>
+		</map>
+		<map uuid="0a89493f-6858-42d0-a381-eb831ea83b93">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.2"/>
+			<target type="control" id-ref="#sr-1">
+			</target>
+		</map>
+		<map uuid="7a3df484-680c-4a94-865e-397989412621">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.2"/>
+			<target type="control" id-ref="#ac-20">
+			</target>
+		</map>
+		<map uuid="b1f044cf-11eb-4e76-a93d-41f1515e826c">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-15.2"/>
+			<target type="control" id-ref="#sr-6">
+			</target>
+		</map>
+		<map uuid="11dc3de5-99b8-43c2-8183-e9b6d6065620">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.3"/>
+			<target type="control" id-ref="#ac-20.1">
+			</target>
+		</map>
+		<map uuid="e27a40af-307b-4c17-98e3-b0e48fe43cd5">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.3"/>
+			<target type="control" id-ref="#ac-20.2">
+			</target>
+		</map>
+		<map uuid="f2519ccd-f722-4d73-9645-f5bc89be55de">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.3"/>
+			<target type="control" id-ref="#pm-17">
+			</target>
+		</map>
+		<map uuid="dd953be6-b4e9-424e-b183-e19673b26612">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.3"/>
+			<target type="control" id-ref="#sr-5">
+			</target>
+		</map>
+		<map uuid="3b4fef7f-582a-4e1c-915c-7644c4301671">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.4"/>
+			<target type="control" id-ref="#sa-4">
+			</target>
+		</map>
+		<map uuid="26d4031d-2e6f-4396-8ebd-836c57419f63">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.4"/>
+			<target type="control" id-ref="#sr-5">
+			</target>
+		</map>
+		<map uuid="f516cb98-78af-46a8-863a-ff850dc5aa0b">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.4"/>
+			<target type="control" id-ref="#sr-6">
+			</target>
+		</map>
+		<map uuid="681071d4-0d7a-4ecd-9c76-1d92f3aa9b23">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.5"/>
+			<target type="control" id-ref="#ac-20.1">
+			</target>
+		</map>
+		<map uuid="b9abf474-e694-419d-8b29-677dc6ae141f">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.5"/>
+			<target type="control" id-ref="#si-4">
+			</target>
+		</map>
+		<map uuid="97e4948b-b4f1-47e2-b372-cdb7a0759941">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-15.6"/>
+			<target type="control" id-ref="#sr-6">
+			</target>
+		</map>
+		<map uuid="7c3545c9-a714-4c1d-a999-3ed31189a52b">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-15.7"/>
+			<target type="control" id-ref="#sr-12">
+			</target>
+		</map>
+		<map uuid="d97861c7-ab12-4b80-93e3-0dee9bd0b6b5">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.1"/>
+			<target type="control" id-ref="#sa-3">
+			</target>
+		</map>
+		<map uuid="7a2b7689-a21f-44f1-90ad-9d4e81902917">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-16.2"/>
+			<target type="control" id-ref="#ca-5">
+			</target>
+		</map>
+		<map uuid="645fa98a-5aaa-4ce8-8e0e-70015b7ccf30">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.2"/>
+			<target type="control" id-ref="#ra-1">
+			</target>
+		</map>
+		<map uuid="41695587-954e-4992-878d-f72b43aafb1c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.2"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="b3e87380-9a4b-4fb0-ba9b-59d019077e50">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.2"/>
+			<target type="control" id-ref="#ra-7">
+			</target>
+		</map>
+		<map uuid="56b5f379-c8d5-4ff1-a958-b0571ca330ec">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.3"/>
+			<target type="control" id-ref="#si-2">
+			</target>
+		</map>
+		<map uuid="8b9fbe56-b388-416f-b741-8bb81525dcb4">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.4"/>
+			<target type="control" id-ref="#cm-8">
+			</target>
+		</map>
+		<map uuid="080cdacc-77ad-4dcb-970a-f14b43e93b7d">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.5"/>
+			<target type="control" id-ref="#sr-11">
+			</target>
+		</map>
+		<map uuid="2dc5917c-824f-43c5-adf1-857087f1567b">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.6"/>
+			<target type="control" id-ref="#ra-5">
+			</target>
+		</map>
+		<map uuid="13bb9f59-16a9-4d10-b258-aa24b912dcf1">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.7"/>
+			<target type="control" id-ref="#cm-6">
+			</target>
+		</map>
+		<map uuid="4f985f66-b687-4fa4-95a0-c7ae175aba62">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.7"/>
+			<target type="control" id-ref="#cm-7">
+			</target>
+		</map>
+		<map uuid="7c3b1c6e-6c04-4f39-97eb-2ecab56ce531">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.8"/>
+			<target type="control" id-ref="#sc-7">
+			</target>
+		</map>
+		<map uuid="1b68a9fb-7d77-42a0-b6cd-f78639ed3339">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.9"/>
+			<target type="control" id-ref="#sa-8">
+			</target>
+		</map>
+		<map uuid="21894526-d0c7-44a7-86bb-2f5d1e22cb8a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.10"/>
+			<target type="control" id-ref="#pl-8">
+			</target>
+		</map>
+		<map uuid="5a536d6a-a15a-4682-a890-dedc6e219901">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.10"/>
+			<target type="control" id-ref="#sa-8">
+			</target>
+		</map>
+		<map uuid="1e4ffa4e-7dbe-4023-9b9e-d002cbd0d0bf">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.11"/>
+			<target type="control" id-ref="#sa-15">
+			</target>
+		</map>
+		<map uuid="bbd68a63-e0b0-41ce-8562-7e281616dd1c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.12"/>
+			<target type="control" id-ref="#sa-11">
+			</target>
+		</map>
+		<map uuid="237b9078-e3d1-4aba-8e95-9332baeea9c2">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-16.12"/>
+			<target type="control" id-ref="#sa-15">
+			</target>
+		</map>
+		<map uuid="24125302-5d46-42e5-8322-14e9af363d56">
+			<relationship>intersects-with</relationship>
+			<source type="control" id-ref="#cis-16.14"/>
+			<target type="control" id-ref="#ra-3">
+			</target>
+		</map>
+		<map uuid="2fb834e2-d0a7-48c1-9a4b-3bf5cc48f9f9">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.1"/>
+			<target type="control" id-ref="#ir-1">
+			</target>
+		</map>
+		<map uuid="891f7cdc-1628-42a8-b737-a36163f35a99">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.1"/>
+			<target type="control" id-ref="#ir-7">
+			</target>
+		</map>
+		<map uuid="02913a0a-8590-4526-a6fa-7b0ceda05c6a">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.1"/>
+			<target type="control" id-ref="#ir-8">
+			</target>
+		</map>
+		<map uuid="a334c60b-881a-43a8-a23e-86d561c0b097">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.2"/>
+			<target type="control" id-ref="#ir-6">
+			</target>
+		</map>
+		<map uuid="cad5a95c-e188-4186-a690-fb127ffc6a99">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.2"/>
+			<target type="control" id-ref="#ir-6.3">
+			</target>
+		</map>
+		<map uuid="ffc2e89e-cd32-4514-bf43-6b7494433695">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.3"/>
+			<target type="control" id-ref="#ir-5">
+			</target>
+		</map>
+		<map uuid="c5710b2c-ba94-4529-bdb1-039b07e7e7cf">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.3"/>
+			<target type="control" id-ref="#ir-6">
+			</target>
+		</map>
+		<map uuid="26e8bbde-403c-4ec1-8255-d7a3d8d72a02">
+			<relationship>superset-of</relationship>
+			<source type="control" id-ref="#cis-17.3"/>
+			<target type="control" id-ref="#ir-6.1">
+			</target>
+		</map>
+		<map uuid="b21afa16-9bc1-4ed0-9689-2369341ce660">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.3"/>
+			<target type="control" id-ref="#ir-8">
+			</target>
+		</map>
+		<map uuid="b483eb7c-a31e-4118-bd08-d4222095ab13">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#ir-1">
+			</target>
+		</map>
+		<map uuid="352dc7ed-ea74-4af6-91c3-6dca212aca3c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#ir-6">
+			</target>
+		</map>
+		<map uuid="b08255e0-123b-418e-8d65-2cb60fe3a276">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#ir-6.1">
+			</target>
+		</map>
+		<map uuid="0888de6e-ad0d-4c87-b39d-4ebc9ac309fb">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.4"/>
+			<target type="control" id-ref="#ir-8">
+			</target>
+		</map>
+		<map uuid="0a6613a0-4a04-4fd7-af31-d10f0222df7c">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.5"/>
+			<target type="control" id-ref="#ir-1">
+			</target>
+		</map>
+		<map uuid="1365d027-5d78-403d-8d7b-bd92982232ba">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.5"/>
+			<target type="control" id-ref="#ir-8">
+			</target>
+		</map>
+		<map uuid="f6df565a-953b-4dba-bcf9-31620deaffc2">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.6"/>
+			<target type="control" id-ref="#cp-8">
+			</target>
+		</map>
+		<map uuid="99905152-be5d-44dc-98f4-d02f5ede4954">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.6"/>
+			<target type="control" id-ref="#ir-8">
+			</target>
+		</map>
+		<map uuid="38e734dd-d71b-48ba-9f14-1f3f95975c75">
+			<relationship>equal-to</relationship>
+			<source type="control" id-ref="#cis-17.7"/>
+			<target type="control" id-ref="#ir-3">
+			</target>
+		</map>
+		<map uuid="8223815f-55ea-4611-8588-3f30d0a3c8e0">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.8"/>
+			<target type="control" id-ref="#ir-4">
+			</target>
+		</map>
+		<map uuid="fcc673d5-f325-488b-997f-45c3af84916e">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.9"/>
+			<target type="control" id-ref="#ir-6">
+			</target>
+		</map>
+		<map uuid="1ac685f5-6ecb-447f-879f-31f01f37bcc1">
+			<relationship>subset-of</relationship>
+			<source type="control" id-ref="#cis-17.9"/>
+			<target type="control" id-ref="#ir-8">
+			</target>
+		</map>
+	</mapping>
+
+	<back-matter>
+		<resource uuid="7f0c0991-54d6-489a-a8d1-30e61b3de4fe">
+			<rlink href="cis-controls-v8_OSCAL-1.0.xml" media-type="application/xml"/>
+		</resource>
+		<resource uuid="13328e5a-c384-4d6e-ba6a-58dcd3ac82a9">
+			<rlink href="https://raw.githubusercontent.com/usnistgov/oscal-content/v1.0.0/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml" media-type="application/xml"/>
+		</resource>
+	</back-matter>
+</mapping-collection>
