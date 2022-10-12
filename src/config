@@ -1,0 +1,4 @@
+# path to source|format of source|model of source|format(s) to convert to
+src/catalogs/xml/*.xml|xml|catalog|json
+# TODO: disable until usnistgov/metaschema#240 resolved and closed.
+#src/mappings/xml/*.xml|xml|mapping|json
