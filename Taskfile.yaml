@@ -1,5 +1,13 @@
 version: "3"
 
+vars:
+  PROJECT_ROOT:
+    sh: echo $PWD
+
+env:
+  PROJECT_ROOT: "{{.PROJECT_ROOT}}"
+  CATALOGS_DIR: "{{.PROJECT_ROOT}}/src/catalogs"
+
 tasks:
   sub-init:
     cmds:
@@ -12,3 +20,6 @@ tasks:
     dir: OSCAL-CLI/cli-core/target/cli-core-0.3.0-oscal-cli/bin
     cmds:
       - ./oscal-cli {{.CLI_ARGS}}
+  convert-catalogs:
+    cmds:
+      - task oscal-cli -- catalog convert --overwrite --to json "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml" "$CATALOGS_DIR/json/cis-controls-v8_OSCAL-1.0.json"
