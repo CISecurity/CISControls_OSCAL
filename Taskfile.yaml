@@ -6,7 +6,7 @@ vars:
 
 env:
   PROJECT_ROOT: "{{.PROJECT_ROOT}}"
-  OSCAL_CLI_BIN: "{{.PROJECT_ROOT}}/OSCAL-CLI/cli-core/target/cli-core-0.3.0-oscal-cli/bin"
+  OSCAL_CLI_BIN: "{{.PROJECT_ROOT}}/OSCAL-CLI/cli-core/target/cli-core-0.3.1-oscal-cli/bin"
   CATALOGS_DIR: "{{.PROJECT_ROOT}}/src/catalogs"
   MAPPINGS_DIR: "{{.PROJECT_ROOT}}/src/mappings"
   OSCAL_XML_SCHEMA_DIR: "{{.PROJECT_ROOT}}/OSCAL/xml/schema"
