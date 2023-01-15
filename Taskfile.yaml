@@ -26,6 +26,12 @@ tasks:
     cmds:
       - task oscal-cli -- catalog convert --overwrite --to json "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml" "$CATALOGS_DIR/json/cis-controls-v8_OSCAL-1.0.json"
       - task oscal-cli -- catalog convert --overwrite --to yaml "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml" "$CATALOGS_DIR/yaml/cis-controls-v8_OSCAL-1.0.yaml"
+  convert-mappings:
+    cmds:
+      - task oscal-cli -- mapping-collection convert --overwrite --to json "$MAPPINGS_DIR/xml/CCM_CISControlsv8_Mapping.xml" "$MAPPINGS_DIR/json/CCM_CISControlsv8_Mapping.json"
+      - task oscal-cli -- mapping-collection convert --overwrite --to yaml "$MAPPINGS_DIR/xml/CCM_CISControlsv8_Mapping.xml" "$MAPPINGS_DIR/yaml/CCM_CISControlsv8_Mapping.yaml"
+      - task oscal-cli -- mapping-collection convert --overwrite --to json "$MAPPINGS_DIR/SP_800_53MOD_CISControlsv8_Mapping.xml" "$MAPPINGS_DIR/SP_800_53MOD_CISControlsv8_Mapping.json"
+      - task oscal-cli -- mapping-collection convert --overwrite --to yaml "$MAPPINGS_DIR/SP_800_53MOD_CISControlsv8_Mapping.xml" "$MAPPINGS_DIR/SP_800_53MOD_CISControlsv8_Mapping.yaml"
   validate-catalogs:
     cmds:
       - xmllint --noout --schema "$OSCAL_XML_SCHEMA_DIR/oscal_catalog_schema.xsd" "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml"
