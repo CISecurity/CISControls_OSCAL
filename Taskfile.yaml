@@ -4,4 +4,11 @@ tasks:
   sub-init:
     cmds:
       - git submodule update --init --recursive
-
+  build-oscal-cli:
+    dir: OSCAL-CLI
+    cmds:
+      - mvn clean install
+  oscal-cli:
+    dir: OSCAL-CLI/cli-core/target/cli-core-0.3.0-oscal-cli/bin
+    cmds:
+      - ./oscal-cli {{.CLI_ARGS}}
