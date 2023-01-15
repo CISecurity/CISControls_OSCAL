@@ -1,0 +1,7 @@
+version: "3"
+
+tasks:
+  sub-init:
+    cmds:
+      - git submodule update --init --recursive
+
