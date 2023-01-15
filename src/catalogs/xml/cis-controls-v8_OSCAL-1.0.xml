@@ -9,7 +9,7 @@
   <last-modified>2020-09-20T12:10:00.001-04:00</last-modified>
   <version>8.0</version>
   <oscal-version>1.0.4</oscal-version>
-  <prop name="keywords" value="contol, assessment"/>
+  <prop name="keywords" value="control, assessment"/>
   <link rel="alternate" media-type="text/html"
    href="https://controls-assessment-specification.readthedocs.io/en/stable/index.html"/>
  </metadata>

@@ -8,7 +8,7 @@
       "oscal-version" : "1.0.4",
       "props" : [ {
         "name" : "keywords",
-        "value" : "contol, assessment"
+        "value" : "control, assessment"
       } ],
       "links" : [ {
         "href" : "https://controls-assessment-specification.readthedocs.io/en/stable/index.html",
