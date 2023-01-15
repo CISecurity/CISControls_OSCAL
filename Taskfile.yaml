@@ -9,6 +9,7 @@ env:
   OSCAL_CLI_BIN: "{{.PROJECT_ROOT}}/OSCAL-CLI/cli-core/target/cli-core-0.3.0-oscal-cli/bin"
   CATALOGS_DIR: "{{.PROJECT_ROOT}}/src/catalogs"
   MAPPINGS_DIR: "{{.PROJECT_ROOT}}/src/mappings"
+  OSCAL_XML_SCHEMA_DIR: "{{.PROJECT_ROOT}}/OSCAL/xml/schema"
 
 tasks:
   sub-init:
@@ -27,6 +28,13 @@ tasks:
       - task oscal-cli -- catalog convert --overwrite --to yaml "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml" "$CATALOGS_DIR/yaml/cis-controls-v8_OSCAL-1.0.yaml"
   validate-catalogs:
     cmds:
+      - xmllint --noout --schema "$OSCAL_XML_SCHEMA_DIR/oscal_catalog_schema.xsd" "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml"
 #      - task oscal-cli -- catalog validate --as xml "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml"
       - task oscal-cli -- catalog validate --as json "$CATALOGS_DIR/json/cis-controls-v8_OSCAL-1.0.json"
       - task oscal-cli -- catalog validate --as yaml "$CATALOGS_DIR/yaml/cis-controls-v8_OSCAL-1.0.yaml"
+  validate-mappings:
+    cmds:
+      - xmllint --noout --schema "$OSCAL_XML_SCHEMA_DIR/oscal_mapping_schema.xsd" "$MAPPINGS_DIR/xml/CCM_CISControlsv8_Mapping.xml"
+      - xmllint --noout --schema "$OSCAL_XML_SCHEMA_DIR/oscal_mapping_schema.xsd" "$MAPPINGS_DIR/SP_800_53MOD_CISControlsv8_Mapping.xml"
+#      - task oscal-cli -- mapping-collection validate --as xml "$MAPPINGS_DIR/xml/CCM_CISControlsv8_Mapping.xml"
+#      - task oscal-cli -- mapping-collection validate --as xml "$MAPPINGS_DIR/SP_800_53MOD_CISControlsv8_Mapping.xml"
