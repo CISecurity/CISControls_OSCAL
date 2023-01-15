@@ -23,3 +23,4 @@ tasks:
   convert-catalogs:
     cmds:
       - task oscal-cli -- catalog convert --overwrite --to json "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml" "$CATALOGS_DIR/json/cis-controls-v8_OSCAL-1.0.json"
+      - task oscal-cli -- catalog convert --overwrite --to yaml "$CATALOGS_DIR/xml/cis-controls-v8_OSCAL-1.0.xml" "$CATALOGS_DIR/yaml/cis-controls-v8_OSCAL-1.0.yaml"
