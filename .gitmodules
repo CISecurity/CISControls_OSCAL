@@ -1,3 +1,6 @@
 [submodule "OSCAL"]
 	path = OSCAL
 	url = https://github.com/usnistgov/OSCAL.git
+[submodule "OSCAL-CLI"]
+	path = OSCAL-CLI
+	url = https://github.com/usnistgov/oscal-cli.git
