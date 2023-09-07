@@ -196,7 +196,7 @@
    <prop ns="https://cisecurity.org/ns/oscal" name="implementation-group" value="2"/>
    <prop ns="https://cisecurity.org/ns/oscal" name="implementation-group" value="3"/>
    <link rel="dependency" href="cisc-2.1"/>
-   <part name="statement" id="cisc-1.2_stmt">
+   <part name="statement" id="cisc-2.2_stmt">
     <p>Ensure that only currently supported software is designated as authorized in the software
      inventory for enterprise assets. If software is unsupported yet necessary for the fulfillment
      of the enterprise’s mission, document an exception detailing mitigating controls and residual
