@@ -1,5 +1,5 @@
-# CIS Controls OSCAL Repository has Been Moved to BitBucket
-# [Current CIS Controls OSCAL Repository](https://bitbucket.org/cis-it-workspace/cis-controls-v8_oscal/src/main/)
+# [CIS Controls OSCAL has Been Moved to BitBucket](https://bitbucket.org/cis-it-workspace/cis-controls-v8_oscal/src/main/)
++ [Currently Maintained Repository for CIS Controls OSCAL Version 8 can be Found Here](https://pages.nist.gov/OSCAL/)
 
 
 # Arhived CIS Controls OSCAL Repository
